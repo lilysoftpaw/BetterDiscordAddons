@@ -1,21 +1,19 @@
-
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://clearvision.gitlab.io/v6/main.css");
 
 /* DO NOT USE THIS IN BETTER DISCORD. THIS IS FOR DEFAULT SETTINGS */
 
 /**
- * @name Main Theme
- * @version 1.0.0
- * @description Ahirusameneko Chan's discord Theme
- * @author Duck-Chan
- * @authorId 598208193772126259
- * @source https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme/MainTheme.theme.css
- * @updateUrl https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme/MainTheme.theme.css
- * @website https://bido67.github.io/aboutme
- * @invite bnSrkHT
+ * name Main Theme
+ * version 1.0.0
+ * description Ahirusameneko Chan's discord Theme
+ * author Duck-Chan
+ * authorId 598208193772126259
+ * source https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme/MainTheme.theme.css
+ * updateUrl https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme/MainTheme.theme.css
+ * website https://bido67.github.io/aboutme
+ * invite bnSrkHT
  */
-
-/*Importing themes*/
-
 /*
 Radial Status V2.0.0
 Credits to: Gibbu#1211
@@ -24,7 +22,7 @@ OG Theme Description: Changes the status icons to wrap around the avatar. Shape 
 OG Theme Source https://github.com/DiscordStyles/RadialStatus
 OG Theme Website https://www.gibbu.me
 */
-@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+
 
 /*
 ClearVision Version Whatever it is
@@ -34,7 +32,7 @@ OG Theme Source https://github.com/ClearVision/ClearVision-v6
 OG Theme Website https://clearvision.gitlab.io
 OG Theme Invite https://discord.gg/dHaSxn3
 */
-@import url(https://clearvision.gitlab.io/v6/main.css);
+
 
 /* Settings for Discord Stable */
 body.stable {
@@ -65,7 +63,7 @@ body.stable {
 	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
   
 	/* HOME BUTTON ICON */
-	--home-icon: url(https://clearvision.github.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
+	--home-icon: url("https://clearvision.github.io/icons/discord.svg"); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
 	--home-position: center; /* home button icon position [default: center] */
 	--home-size: 40px; /* home button icon size [default: 40px] */
   
