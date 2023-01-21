@@ -5,7 +5,7 @@
 
 /**
  * name Main Theme
- * version 1.0.0
+ * version 1.0.1
  * description Ahirusameneko Chan's discord Theme
  * author Duck-Chan
  * authorId 598208193772126259
@@ -79,25 +79,18 @@ body.ptb {
 	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
 	--offline-color: #808080;
 
-	--background-image: url(https://bido67.github.io/discord-backgrounds-bido/vlcsnap-2023-01-20-20h27m06s763.png) rgba(0,0,0,0.5);
+	--background-image: url(https://bido67.github.io/discord-backgrounds-bido/vlcsnap-2023-01-20-20h27m06s763.png) rgba(0,0,0,0.5) !important;
 	/* End of Clearvision settings */
+    --image-attachement-opacity: 1;
 
 
-	/* Use this portion below for a background image */
-	background-blend-mode: overlay !important;
-	background: var(--background-image) !important;
-	background-attachment: var(--background-attachment) !important;
-	background-position: var(--background-position) !important;
-	background-color: var(--background-overlay) !important;
-	background-repeat: var(--background-repeat) !important;
-	background-size: var(--background-size) !important;
 }
 /* Settings for Discord Canary */
 body.canary{
 	/* CLEARVISION SETTINGS */
 	/* ACCENT COLORS */
-	--main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-	--hover-color: #4b72a9; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+	--main-color: #2780e6; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+	--hover-color: #1e63b3; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
 	--success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
 	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
 
@@ -107,7 +100,10 @@ body.canary{
 	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
 	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
 	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+	
+	--background-image: url(https://bido67.github.io/discord-backgrounds-bido/Background_4x_16_9.jpg) rgba(0,0,0,0.5); /**/
 	/* End of Clearvision settings */
+    --image-attachement-opacity: 1;
 }
 
 /* Example of how to make the background image of a client adapt to a vertical layout*/
