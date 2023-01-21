@@ -11,6 +11,10 @@
  */
 
 /*Importing themes*/
+
+/*Duck-Chan's own file owo*/
+@import url("");
+
 /*
 Radial Status V2.0.0
 Credits to: Gibbu#1211
@@ -20,8 +24,8 @@ OG Theme Source https://github.com/DiscordStyles/RadialStatus
 OG Theme Website https://www.gibbu.me
 */
 
-/* IMPORT The radial status */
-@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+/* IMPORT For radial status is done in the MainTheme.css Import */
+/*@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");*/
 
 /*
 ClearVision Version Whatever it is
@@ -32,41 +36,72 @@ OG Theme Website https://clearvision.gitlab.io
 OG Theme Invite https://discord.gg/dHaSxn3
 */
 
-/* IMPORT Clearvision CSS */
-@import url(https://clearvision.gitlab.io/v6/main.css);
+/* IMPORT Clearvision is done in the MainTheme.css CSS */
+/*@import url(https://clearvision.gitlab.io/v6/main.css);*/
 
 
 
 /*@media screen and (orientation: portrait) {
-    :root {
+    body.stable {
         --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
     }
 }*/
-.imageWrapper-oMkQl4 {
-	opacity: 0.5;
-}
 
+
+
+/* Settings for Discord Stable */
 body.stable {
+	/* CLEARVISION SETTINGS */
 	/* ACCENT COLORS */
 	--main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
 	--hover-color: #4b72a9; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
 	--success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
 	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
-
+	--url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
+  
 	/* STATUS COLORS */
 	--online-color: var(--main-color); /* online status color (hex, rgb or hsl) [default: #43b581] */
 	--idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
 	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
 	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
 	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
-	--font-primary: var(--main-font) !important;
-    --font-display: var(--main-font) !important;
-    --font-headline: var(--main-font) !important;
+  
+	/* GENERAL */
+	--main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+	--text-normal: rgb(220, 221, 222); /* color of default discord text */
+	--text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+	--members-width: 240px; /* member list width [default: 240px] */
+  
+	/* APP BACKGROUND */
+	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
+	--background-image: url(https://clearvision.github.io/images/sapphire.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
+  
+	/* HOME BUTTON ICON */
+	--home-icon: url(https://clearvision.github.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
+	--home-position: center; /* home button icon position [default: center] */
+	--home-size: 40px; /* home button icon size [default: 40px] */
+  
+	/* CHANNEL COLORS */
+	--channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
+	--channel-color: rgba(255, 255, 255, 0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+	--channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
+	--muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+
+	--text-normal: rgb(220, 221, 222); /* color of default discord text */
+	--text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+	--members-width: 240px; /* member list width [default: 240px] */
+	
+	/* Use this portion below for a transparent background */
 	--body-back-image: none;
 	--body-back-color: #89bfd69f;
 	background-color: var(--body-back-color) !important;
 	background-image: var(--body-back-image) !important;
 }
+
+/* Settings for Discord PTB */
 body.ptb {
 
 	--main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
@@ -80,6 +115,8 @@ body.ptb {
 	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
 	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
 	--offline-color: #808080;
+
+	/* Use this portion below for a background image */
 	background-blend-mode: overlay !important;
 	background: var(--background-image) !important;
 	background-attachment: var(--background-attachment)!important;
@@ -88,6 +125,7 @@ body.ptb {
 	background-repeat: var(--background-repeat)!important;
 	background-size: var(--background-size)!important;
 }
+/* Settings for Discord Canary */
 body.canary{
 	/* ACCENT COLORS */
 	--main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
@@ -102,6 +140,8 @@ body.canary{
 	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
 	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 }
+
+/* Settings across any clients */
 body.anyclient{
 	/* GENERAL */
 	--main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
@@ -113,10 +153,8 @@ body.anyclient{
 	/* APP BACKGROUND */
 	--background-shading: 50%; /* app background shading (0 for complete smoothness) [default: 100%] */
 	--background-overlay: rgba(0, 0, 0, 0.45); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	/*--background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_FuckedBigger.png) rgba(0,0,0,0.5); /**/
-	--background-image: none; /**/
-	/*--background-image: none;*/
-	/*--background-image: url(https://i.gifer.com/7b7Q.gif);*/
+	/*Note: Due to theme edits, this is set to none.*/
+	--background-image: none; /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
 	--background-position: center; /* app background position [default: center] */
 	--background-size: cover; /* app background size [default: cover] */
 	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
@@ -128,17 +166,7 @@ body.anyclient{
 	--background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
 	--background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
 	--background-blur: 0px; /* app background blur [default: 0px] */
-}
 
-
-
-
-/* SETTINGS */
-
-
-
-body.anyclient {
-	/*Clear vision*/
 	/* HOME BUTTON ICON */
 	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
 	/*--home-icon: url(https://i.gifer.com/7b7Q.gif); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
@@ -147,6 +175,16 @@ body.anyclient {
 	
 	/* MODAL BACKDROP */
 	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+
+	--font-primary: var(--main-font) !important;
+    --font-display: var(--main-font) !important;
+    --font-headline: var(--main-font) !important;
+}
+/* The rest of the settings from Clearvision */
+
+body.anyclient { /* Replaced ":root" (Original Clearvision config) to "body.anyclient" otherwise it does not work. */
+	
+	/* MODAL BACKDROP */
 	--backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(---background-image)] */
 	--backdrop-position: var(--background-position); /* modal backdrop position [default: var(---background-position)] */
 	--backdrop-size: var(--background-size); /* modal backdrop size [default: var(---background-size)] */
@@ -193,10 +231,20 @@ body.anyclient {
 	--bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
 	--bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
     
+}
+
+/* From this point on its my own theme */
+
+
+body.anyclient {
     /* FONT SHIT */
     --font-primary: var(--main-font) !important;
     --font-display: var(--main-font) !important;
     --font-headline: var(--main-font) !important;
+}
+
+.imageWrapper-oMkQl4 {
+	opacity: 0.5;
 }
 
 

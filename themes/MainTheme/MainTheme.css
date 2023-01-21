@@ -1,0 +1,42 @@
+
+
+/* DO NOT USE THIS IN BETTER DISCORD. THIS IS FOR DEFAULT SETTINGS */
+
+
+/**
+ * @name Main Theme
+ * @version 1.0.0
+ * @description Ahirusameneko Chan's discord Theme
+ * @author Duck-Chan
+ * @authorId 598208193772126259
+ * @source https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme/MainTheme.theme.css
+ * @updateUrl https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme/MainTheme.theme.css
+ * @website https://bido67.github.io/aboutme
+ * @invite bnSrkHT
+ */
+
+/*Importing themes*/
+
+/*
+Radial Status V2.0.0
+Credits to: Gibbu#1211
+OG Theme Invite https://discord.gg/ZHthyCw
+OG Theme Description: Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file.
+OG Theme Source https://github.com/DiscordStyles/RadialStatus
+OG Theme Website https://www.gibbu.me
+*/
+
+/* IMPORT For radial status is done in the MainTheme.css Import */
+/*@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");*/
+
+/*
+ClearVision Version Whatever it is
+Credits to: ClearVision Team
+OG Theme Description: Highly customizable theme for BetterDiscord.
+OG Theme Source https://github.com/ClearVision/ClearVision-v6
+OG Theme Website https://clearvision.gitlab.io
+OG Theme Invite https://discord.gg/dHaSxn3
+*/
+
+/* IMPORT Clearvision is done in the MainTheme.css CSS */
+/*@import url(https://clearvision.gitlab.io/v6/main.css);*/
