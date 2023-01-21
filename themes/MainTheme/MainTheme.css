@@ -1,5 +1,5 @@
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
-@import url("https://clearvision.gitlab.io/v6/main.css");
+@import url("https://clearvision.github.io/ClearVision-v6/main.css");
 
 /* DO NOT USE THIS IN BETTER DISCORD. THIS IS FOR DEFAULT SETTINGS */
 
@@ -34,6 +34,7 @@ OG Theme Invite https://discord.gg/dHaSxn3
 */
 
 
+
 /* Settings for Discord Stable */
 body.stable {
 	/* CLEARVISION SETTINGS */
@@ -50,45 +51,17 @@ body.stable {
 	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
 	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
 	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
-  
-	/* GENERAL */
-	--main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
-	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
-	--text-normal: rgb(220, 221, 222); /* color of default discord text */
-	--text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
-	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
-	--members-width: 240px; /* member list width [default: 240px] */
-  
-	/* APP BACKGROUND */
-	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
-  
-	/* HOME BUTTON ICON */
-	--home-icon: url("https://clearvision.github.io/icons/discord.svg"); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
-	--home-position: center; /* home button icon position [default: center] */
-	--home-size: 40px; /* home button icon size [default: 40px] */
-  
-	/* CHANNEL COLORS */
-	--channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
-	--channel-color: rgba(255, 255, 255, 0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
-	--channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
-	--muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
-
-	--text-normal: rgb(220, 221, 222); /* color of default discord text */
-	--text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
-	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
-	--members-width: 240px; /* member list width [default: 240px] */
+	
 	/* End of Clearvision settings */
-
-
-    /* My theme */
-    --image-attachement-opacity: 0.5;
-
 
 	/* Use this portion below for a transparent background */
 	--body-back-image: none;
 	--body-back-color: #89bfd69f;
 	background-color: var(--body-back-color) !important;
 	background-image: var(--body-back-image) !important;
+
+	/* My theme */
+    --image-attachement-opacity: 0.5;
 }
 
 /* Settings for Discord PTB */
@@ -109,8 +82,6 @@ body.ptb {
 	--background-image: url(https://bido67.github.io/discord-backgrounds-bido/vlcsnap-2023-01-20-20h27m06s763.png) rgba(0,0,0,0.5);
 	/* End of Clearvision settings */
 
-    /* My theme */
-    --image-attachement-opacity: 1;
 
 	/* Use this portion below for a background image */
 	background-blend-mode: overlay !important;
@@ -137,21 +108,27 @@ body.canary{
 	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
 	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 	/* End of Clearvision settings */
-
-    /* My theme */
-    --image-attachement-opacity: 1;
 }
+
+/* Example of how to make the background image of a client adapt to a vertical layout*/
+/*
+@media screen and (orientation: portrait) {
+    body.canary {
+        --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
+    }
+}
+*/
 
 /* Settings across any clients */
 body.anyclient{
-	/* CLEARVISION SETTINGS */
+	/* CLEARVISION SETTINGS */ /*Note: I kinda messed up the config order. Feel free to copy the orignial config and paste it here :3 */
 	/* GENERAL */
 	--main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
 	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
 	--server-columns: 2; /* amount of server list columns [default: 1] */
 	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
 	--members-width: 240px; /* member list width [default: 240px] */
-	--avatar-roundness: 50%; /* avatar roundness (0% for squares, 50% for circles) [default: 50%] */
+	--avatar-roundness: var(--rs-avatar-shape); /* avatar roundness (0% for squares, 50% for circles) [default: 50%] */
 	/* APP BACKGROUND */
 	--background-shading: 50%; /* app background shading (0 for complete smoothness) [default: 100%] */
 	--background-overlay: rgba(0, 0, 0, 0.45); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
@@ -177,6 +154,32 @@ body.anyclient{
 	
 	/* MODAL BACKDROP */
 	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+
+	/* GENERAL */
+	--text-normal: rgb(220, 221, 222); /* color of default discord text */
+	--text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+	--members-width: 240px; /* member list width [default: 240px] */
+  
+	/* APP BACKGROUND */
+	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
+  
+	/* HOME BUTTON ICON */
+	--home-icon: url(https://clearvision.github.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
+	--home-position: center; /* home button icon position [default: center] */
+	--home-size: 40px; /* home button icon size [default: 40px] */
+  
+	/* CHANNEL COLORS */
+	--channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
+	--channel-color: rgba(255, 255, 255, 0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+	--channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
+	--muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+
+	--text-normal: rgb(220, 221, 222); /* color of default discord text */
+	--text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+	--members-width: 240px; /* member list width [default: 240px] */
+
 	/* End of Clearvision settings */
 
 	/* Radial Status settings */
@@ -189,8 +192,6 @@ body.anyclient{
   	--rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
 
  	--rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-
-    /* Here I've set Radial status to use the settings defined for Clearvision. It helps since one set of settings only is required*/
 
   	--rs-online-color: var(--online-color); /* Colour for online status */
   	--rs-idle-color: var(--idle-color); /* Colour for idle status */
@@ -269,8 +270,52 @@ body.anyclient { /* Replaced ":root" (Original Clearvision config) to "body.anyc
     --font-headline: var(--main-font) !important;
     
 }
-/* Image transparency */
+/* Image transparency for transparent discord */
 .imageWrapper-oMkQl4 {
 	opacity: var(--image-attachement-opacity); 
+}
+
+
+/*Fixing a thing that isn't fixed in clearvision, aka the phone in the dms */
+svg.mask-2Me5HY>rect[fill="rgba(59, 165, 92, 1)"]{
+    fill: var(--online-color) !important;
+}
+svg.mask-2Me5HY>rect[fill="rgba(250, 166, 26, 1)"]{
+    fill: var(--idle-color) !important;
+}
+svg.mask-2Me5HY>rect[fill="rgba(237, 66, 69, 1)"]{
+    fill: var(--dnd-color) !important;
+}
+svg.mask-2Me5HY>rect[fill="rgba(116, 127, 141, 1)"]{
+    fill: var(--offline-color) !important;
+}
+
+
+/* Support for Platform Indcator Plugin */
+.PI-indicatorContainer>svg[data-status="online"]{
+    color: var(--online-color) !important;
+}
+
+.PI-indicatorContainer>svg[data-status="idle"]{
+    color: var(--idle-color) !important;
+}
+
+.PI-indicatorContainer>svg[data-status="dnd"]{
+    color: var(--dnd-color) !important;
+}
+
+
+/* Support for Channel Tabs plugin */
+.channelTabs-onlineIcon{
+    stroke: var(--online-color) !important;
+}
+.channelTabs-idleIcon{
+    stroke: var(--idle-color) !important;
+}
+.channelTabs-doNotDisturbIcon{
+    stroke: var(--dnd-color) !important;
+}
+.channelTabs-offlineIcon{
+    stroke: var(--offline-color) !important;
 }
 
