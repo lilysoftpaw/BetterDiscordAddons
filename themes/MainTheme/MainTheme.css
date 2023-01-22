@@ -457,11 +457,19 @@ svg.mask-2Me5HY>rect[fill="rgba(116, 127, 141, 1)"],
 svg.mask-2Me5HY>rect[fill="#747f8d"]{
     fill: var(--offline-color) !important;
 }
+svg.mask-2Me5HY>rect[fill="rgba(89, 54, 149, 1)"],
+svg.mask-2Me5HY>rect[fill="#593695"]{
+    fill: var(--streaming-color) !important;
+}
+
 
 
 /* Support for Platform Indcator Plugin */
 .PI-indicatorContainer>svg[data-status="online"]{
     color: var(--online-color) !important;
+}
+.PI-indicatorContainer>svg[data-status="streaming"]{
+    color: var(--streaming-color) !important;
 }
 
 .PI-indicatorContainer>svg[data-status="idle"]{
