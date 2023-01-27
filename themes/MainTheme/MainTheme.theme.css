@@ -117,6 +117,27 @@ body.canary{
 	/* End of Clearvision settings */
     --image-attachement-opacity: 1;
 }
+body.development{
+	/* CLEARVISION SETTINGS */
+	--main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+	--hover-color: #4b72a9; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+	--success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
+	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+
+	/* STATUS COLORS */
+	--online-color: var(--main-color); /* online status color (hex, rgb or hsl) [default: #43b581] */
+	--idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
+	--offline-color: #808080;
+
+	--background-image: url(https://bido67.github.io/discord-backgrounds-bido/vlcsnap-2023-01-20-20h27m06s763.png) rgba(0,0,0,0.5) !important;
+	/* End of Clearvision settings */
+    --image-attachement-opacity: 1;
+
+
+
+}
 
 
 
