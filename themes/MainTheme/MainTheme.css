@@ -463,6 +463,26 @@ body:not(.anyclient) {
 	--shrink-servers: 30px;
 	--shrink-channels: 55px;
 }
+body:not([inputtype="mouse"]):not([inputtype="touch"]):not([inputtype="pen"]){
+	--shrink-settings-opacity: 0;
+	--shrink-settings-pointer-events: none;
+	--shrink-channels-margin-left: 0px;
+}
+body[inputtype="mouse"]{
+	--shrink-settings-opacity: 0;
+	--shrink-settings-pointer-events: none;
+	--shrink-channels-margin-left: 0px;
+}
+body[inputtype="touch"],
+body[inputtype="pen"]{
+     /*CUSTOM EDITS SETTINGS*/
+	--shrink-members: var(--channels-width);
+	--shrink-servers: 72px !important;
+	--shrink-channels: var(--members-width);
+	--shrink-channels-margin-left: 8px;
+	--shrink-settings-opacity: 1;
+	--shrink-settings-pointer-events: all;
+ }
 
 
 /* Image transparency for transparent discord */
@@ -666,22 +686,21 @@ svg.mask-2Me5HY>rect[fill="#593695"]{
 }
 
 /* Channel List */
-.sidebar-1tnWFu{
-    
+.sidebar-1tnWFu{    
     width: var(--shrink-channels);
 }
 .sidebar-1tnWFu:hover{
     width: var(--channels-width);
 }
 .sidebar-1tnWFu .channel-1Shao0{
-    margin-left: 0px;
+    margin-left: var(--shrink-channels-margin-left);
 }
 .sidebar-1tnWFu:hover .channel-1Shao0{
     margin-left: 8px;
 }
 .sidebar-1tnWFu .container-YkUktl>.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz {
-    opacity: 0;
-    pointer-events: none;
+    opacity: var(--shrink-settings-opacity);
+    pointer-events: var(--shrink-settings-pointer-events);
 }
 .sidebar-1tnWFu:hover .container-YkUktl>.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz {
     opacity: 1;

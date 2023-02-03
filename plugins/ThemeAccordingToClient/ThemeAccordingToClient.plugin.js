@@ -9,7 +9,7 @@
  * @website https://bido67.github.io/aboutme
  * @invite bnSrkHT
  */
-
+// This plugin will be renamed to theme controller.
 module.exports = class ThemeAccordingToClientPlugin {
     load() {}
     start() {
@@ -31,6 +31,12 @@ module.exports = class ThemeAccordingToClientPlugin {
         
         
         document.body.classList.add("anyclient");
+        //Add event listener for touch / mouse / pen input
+        document.body.addEventListener('pointerdown', (event) => {
+    	    var myshit = document.createAttribute("inputType");
+	        myshit.value = event.pointerType;
+	        document.body.attributes.setNamedItem(myshit);
+        })
     }
     stop() {}
 };
