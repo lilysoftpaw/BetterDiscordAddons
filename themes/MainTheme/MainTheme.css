@@ -463,6 +463,11 @@ body:not(.anyclient) {
 	--shrink-servers: 30px;
 	--shrink-channels: 55px;
 }
+body:not([inputtype="mouse"]):not([inputtype="touch"]):not([inputtype="pen"]){
+	--shrink-settings-opacity: 0;
+	--shrink-settings-pointer-events: none;
+	--shrink-channels-margin-left: 0px;
+}
 body[inputtype="mouse"]{
 	--shrink-settings-opacity: 0;
 	--shrink-settings-pointer-events: none;
