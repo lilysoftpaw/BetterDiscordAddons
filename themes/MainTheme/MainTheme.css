@@ -288,6 +288,11 @@ body.anyclient { /* Replaced ":root" (Original Clearvision config) to "body.anyc
     --font-primary: var(--main-font) !important;
     --font-display: var(--main-font) !important;
     --font-headline: var(--main-font) !important;
+
+	/*CUSTOM EDITS SETTINGS*/
+	--shrink-members: 65px;
+	--shrink-servers: 30px;
+	--shrink-channels: 55px;
     
 }
 
@@ -452,6 +457,11 @@ body:not(.anyclient) {
     --font-primary: var(--main-font) !important;
     --font-display: var(--main-font) !important;
     --font-headline: var(--main-font) !important;
+	
+	/*CUSTOM EDITS SETTINGS*/
+	--shrink-members: 65px;
+	--shrink-servers: 30px;
+	--shrink-channels: 55px;
 }
 
 
@@ -648,7 +658,8 @@ svg.mask-2Me5HY>rect[fill="#593695"]{
 /****** Colapsing channel list + member list ********/
 /* Transition timings */
 .members-3WRCEx,
-.sidebar-1tnWFu * {
+.sidebar-1tnWFu *,
+[aria-label="Servers sidebar"] {
     transition-property: all;
     transition-duration: 350ms;
     transition-timing-function: ease-in-out;
@@ -657,7 +668,7 @@ svg.mask-2Me5HY>rect[fill="#593695"]{
 /* Channel List */
 .sidebar-1tnWFu{
     
-    width: 55px;
+    width: var(--shrink-channels);
 }
 .sidebar-1tnWFu:hover{
     width: var(--channels-width);
@@ -678,8 +689,19 @@ svg.mask-2Me5HY>rect[fill="#593695"]{
 }
 /* Member list */
 .members-3WRCEx{
-    width: 65px;
+    width: var(--shrink-members);
 }
 .members-3WRCEx:hover{
     width: var(--members-width);
+}
+[aria-label="Servers sidebar"]
+{
+    width: var(--shrink-servers);
+}
+[aria-label="Servers sidebar"]:hover
+{
+    width: 72px;
+}
+.membersWrap-3NUR2t{
+	flex-basis: 0px;
 }
