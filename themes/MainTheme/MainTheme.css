@@ -588,7 +588,7 @@ main.chatContent-3KubbW{
  }
  .form-3gdLxP:hover{
 	max-height: var(--message-form-height-hover);
-	width: var(--message-form-width-focus);
+	width: var(--message-form-width-hover);
  }
  .form-3gdLxP:focus, .form-3gdLxP:focus-within, .form-3gdLxP:focus-visible{
 	max-height: var(--message-form-height-focus);
