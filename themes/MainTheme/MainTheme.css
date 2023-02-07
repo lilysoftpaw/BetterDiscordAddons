@@ -323,6 +323,13 @@ body {
     --shrink-members: 65px;
     --shrink-servers: 30px;
     --shrink-channels: 55px;
+	--message-wrapper-width: 100%;
+	--message-form-width: 25%;
+	--message-form-width-hover: 60%;
+	--message-form-width-focus: calc(var(--message-wrapper-width) - 3%);
+	--message-form-height: 15px;
+	--message-form-height-hover: 10%;
+	--message-form-height-focus: 50%;
 }
 
 /*Fixing a thing that isn't fixed in clearvision, aka the phone in the dms */
@@ -504,8 +511,12 @@ svg.mask-2Me5HY > rect[fill="#593695"] {
 .peopleColumn-1wMU14 {
     background: rgba(0, 0, 0, calc(var(--background-shading) * var(--funny3)));
 }
-/****** Colapsing channel list + member list ********/
+/****** Colapsing channel list + member list + server list + message form ********/
 /* Transition timings */
+main.chatContent-3KubbW,
+ .messagesWrapper-RpOMA3,
+ .form-3gdLxP,
+.members-3WRCEx .membersGroup-2eiWxl,
 .members-3WRCEx,
 .sidebar-1tnWFu *,
 [aria-label="Servers sidebar"] {
@@ -552,6 +563,34 @@ svg.mask-2Me5HY > rect[fill="#593695"] {
 .membersWrap-3NUR2t {
     flex-basis: 0px;
 }
-.members-3WRCEx .membersGroup-2eiWxl {
-    display: var(--group-display) !important;
+.members-3WRCEx:not(:hover) .membersGroup-2eiWxl {
+    height: 0px;
+	opacity: 0;
+	overflow: hidden;
+	padding: 0px;
 }
+/* Message Form */
+main.chatContent-3KubbW{
+	position: relative;
+	display: flex;
+	align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+ }
+ .messagesWrapper-RpOMA3 {
+	position: relative;
+	width: var(--message-wrapper-width);
+ }
+ .form-3gdLxP:not(:hover){
+	max-height: var(--message-form-height);
+	width: var(--message-form-width);
+ }
+ .form-3gdLxP:hover{
+	max-height: var(--message-form-height-hover);
+	width: var(--message-form-width-focus);
+ }
+ .form-3gdLxP:focus, .form-3gdLxP:focus-within, .form-3gdLxP:focus-visible{
+	max-height: var(--message-form-height-focus);
+	width: var(--message-form-width-focus);
+ }
