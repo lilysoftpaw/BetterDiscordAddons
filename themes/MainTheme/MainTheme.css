@@ -467,11 +467,13 @@ body:not([inputtype="mouse"]):not([inputtype="touch"]):not([inputtype="pen"]){
 	--shrink-settings-opacity: 0;
 	--shrink-settings-pointer-events: none;
 	--shrink-channels-margin-left: 0px;
+	--group-display: block;
 }
 body[inputtype="mouse"]{
 	--shrink-settings-opacity: 0;
 	--shrink-settings-pointer-events: none;
 	--shrink-channels-margin-left: 0px;
+	--group-display:none;
 }
 body[inputtype="touch"],
 body[inputtype="pen"]{
@@ -482,6 +484,7 @@ body[inputtype="pen"]{
 	--shrink-channels-margin-left: 8px;
 	--shrink-settings-opacity: 1;
 	--shrink-settings-pointer-events: all;
+	--group-display: block;
  }
 
 
@@ -711,6 +714,7 @@ svg.mask-2Me5HY>rect[fill="#593695"]{
     width: var(--shrink-members);
 }
 .members-3WRCEx:hover{
+	--group-display: block;
     width: var(--members-width);
 }
 [aria-label="Servers sidebar"]
