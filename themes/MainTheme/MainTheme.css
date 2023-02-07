@@ -1,555 +1,383 @@
+/**
+ * @name Main Theme (DO NOT USE IN BETTER DISCORD)
+ * @version 1.1.0
+ * @description This file is normally imported in the actual theme. it only contains the meta in case you randomly decide to use it in betterdiscord even tho you are told not to.
+ * @author Duck-Chan
+ * @authorId 598208193772126259
+ * @source https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme
+ * @website https://bido67.github.io/aboutme
+ * @invite bnSrkHT
+ */
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 @import url("https://clearvision.github.io/ClearVision-v6/main.css");
 
 /* DO NOT USE THIS IN BETTER DISCORD. THIS IS FOR DEFAULT SETTINGS */
 
-/**
- * name Main Theme
- * version 1.0.1
- * description Ahirusameneko Chan's discord Theme
- * author Duck-Chan
- * authorId 598208193772126259
- * source https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme/MainTheme.theme.css
- * updateUrl https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme/MainTheme.theme.css
- * website https://bido67.github.io/aboutme
- * invite bnSrkHT
+/*
+ Radial Status V2.0.0
+ Credits to: Gibbu#1211
+ OG Theme Invite https://discord.gg/ZHthyCw
+ OG Theme Description: Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file.
+ OG Theme Source https://github.com/DiscordStyles/RadialStatus
+ OG Theme Website https://www.gibbu.me
  */
-/*
-Radial Status V2.0.0
-Credits to: Gibbu#1211
-OG Theme Invite https://discord.gg/ZHthyCw
-OG Theme Description: Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file.
-OG Theme Source https://github.com/DiscordStyles/RadialStatus
-OG Theme Website https://www.gibbu.me
-*/
-
 
 /*
-ClearVision Version Whatever it is
-Credits to: ClearVision Team
-OG Theme Description: Highly customizable theme for BetterDiscord.
-OG Theme Source https://github.com/ClearVision/ClearVision-v6
-OG Theme Website https://clearvision.gitlab.io
-OG Theme Invite https://discord.gg/dHaSxn3
-*/
-
-
+ ClearVision Version Whatever it is
+ Credits to: ClearVision Team
+ OG Theme Description: Highly customizable theme for BetterDiscord.
+ OG Theme Source https://github.com/ClearVision/ClearVision-v6
+ OG Theme Website https://clearvision.gitlab.io
+ OG Theme Invite https://discord.gg/dHaSxn3
+ */
 
 /* Settings for Discord Stable */
 body.stable {
-	/* CLEARVISION SETTINGS */
-	/* ACCENT COLORS */
-	--main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-	--hover-color: #4b72a9; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
-	--success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
-	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
-	--url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
-  
-	/* STATUS COLORS */
-	--online-color: var(--main-color); /* online status color (hex, rgb or hsl) [default: #43b581] */
-	--idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
-	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
-	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
-	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
-	
-	/* End of Clearvision settings */
+    /* CLEARVISION SETTINGS */
+    /* ACCENT COLORS */
+    --main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+    --hover-color: #4b72a9; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+    --success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
+    --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+    --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
 
-	/* Use this portion below for a transparent background */
-	--body-back-image: none;
-	--body-back-color: #89bfd69f;
-	background-color: var(--body-back-color) !important;
-	background-image: var(--body-back-image) !important;
+    /* STATUS COLORS */
+    --online-color: var(--main-color); /* online status color (hex, rgb or hsl) [default: #43b581] */
+    --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+    --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+    --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
+    --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 
-	/* My theme */
+    /* End of Clearvision settings */
+
+    /* Use this portion below for a transparent background */
+    --body-back-image: none;
+    --body-back-color: #89bfd69f;
+    background-color: var(--body-back-color) !important;
+    background-image: var(--body-back-image) !important;
+
+    /* My theme */
     --image-attachement-opacity: 0.5;
 }
 
 /* Settings for Discord PTB */
 body.ptb {
-	/* CLEARVISION SETTINGS */
-	--main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-	--hover-color: #4b72a9; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
-	--success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
-	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+    /* CLEARVISION SETTINGS */
+    --main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+    --hover-color: #4b72a9; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+    --success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
+    --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
 
-	/* STATUS COLORS */
-	--online-color: var(--main-color); /* online status color (hex, rgb or hsl) [default: #43b581] */
-	--idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
-	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
-	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
-	--offline-color: #808080;
+    /* STATUS COLORS */
+    --online-color: var(--main-color); /* online status color (hex, rgb or hsl) [default: #43b581] */
+    --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+    --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+    --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
+    --offline-color: #808080;
 
-	--background-image: url(https://bido67.github.io/discord-backgrounds-bido/Windoge.png) rgba(0,0,0,0.5) !important;
-	/* End of Clearvision settings */
+    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Windoge.png) rgba(0, 0, 0, 0.5) !important;
+    /* End of Clearvision settings */
     --image-attachement-opacity: 1;
-
-
 }
 /* Settings for Discord Canary */
-body.canary{
-	/* CLEARVISION SETTINGS */
-	/* ACCENT COLORS */
-	--main-color: #2780e6; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-	--hover-color: #1e63b3; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
-	--success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
-	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+body.canary {
+    /* CLEARVISION SETTINGS */
+    /* ACCENT COLORS */
+    --main-color: #2780e6; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+    --hover-color: #1e63b3; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+    --success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
+    --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
 
-	/* STATUS COLORS */
-	--online-color: var(--main-color); /* online status color (hex, rgb or hsl) [default: #43b581] */
-	--idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
-	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
-	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
-	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
-	
-	--background-image: url(https://bido67.github.io/discord-backgrounds-bido/Background_4x_16_9.jpg) rgba(0,0,0,0.5); /**/
-	/* End of Clearvision settings */
+    /* STATUS COLORS */
+    --online-color: var(--main-color); /* online status color (hex, rgb or hsl) [default: #43b581] */
+    --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+    --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+    --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
+    --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+
+    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Background_4x_16_9.jpg) rgba(0, 0, 0, 0.5); /**/
+    /* End of Clearvision settings */
     --image-attachement-opacity: 1;
 }
-body.development{
-	/* CLEARVISION SETTINGS */
-	--main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-	--hover-color: #4b72a9; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
-	--success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
-	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+body.development {
+    /* CLEARVISION SETTINGS */
+    --main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+    --hover-color: #4b72a9; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+    --success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
+    --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
 
-	/* STATUS COLORS */
-	--online-color: var(--main-color); /* online status color (hex, rgb or hsl) [default: #43b581] */
-	--idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
-	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
-	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
-	--offline-color: #808080;
+    /* STATUS COLORS */
+    --online-color: var(--main-color); /* online status color (hex, rgb or hsl) [default: #43b581] */
+    --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+    --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+    --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
+    --offline-color: #808080;
 
-	--background-image: url(https://bido67.github.io/discord-backgrounds-bido/vlcsnap-2023-01-20-20h27m06s763.png) rgba(0,0,0,0.5) !important;
-	/* End of Clearvision settings */
+    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/vlcsnap-2023-01-20-20h27m06s763.png) rgba(0, 0, 0, 0.5) !important;
+    /* End of Clearvision settings */
     --image-attachement-opacity: 1;
-
-
-
 }
 
 /* Example of how to make the background image of a client adapt to a vertical layout*/
 /*
-@media screen and (orientation: portrait) {
-    body.canary {
-        --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
-    }
-}
-*/
+ @media screen and (orientation: portrait) {
+	 body.canary {
+		 --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
+	 }
+ }
+ */
 
-
-
-
-/* Settings across any clients */
-body.anyclient{
-	/* CLEARVISION SETTINGS */ /*Note: I kinda messed up the config order. Feel free to copy the orignial config and paste it here :3 */
-	/* GENERAL */
-	--main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
-	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
-	--server-columns: 2; /* amount of server list columns [default: 1] */
-	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
-	--members-width: 240px; /* member list width [default: 240px] */
-	--avatar-roundness: var(--rs-avatar-shape); /* avatar roundness (0% for squares, 50% for circles) [default: 50%] */
-	/* APP BACKGROUND */
-	--background-shading: 50%; /* app background shading (0 for complete smoothness) [default: 100%] */
-	--background-overlay: rgba(0, 0, 0, 0.45); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	/*Note: Due to theme edits, this is set to none.*/
-	--background-image: none; /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
-	--background-position: center; /* app background position [default: center] */
-	--background-size: cover; /* app background size [default: cover] */
-	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
-	--background-attachment: fixed; /* app background attachment [default: fixed] */
-	--background-brightness: 90%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
-	--background-contrast: 90%; /* app background contrast [default: 100%] */
-	--background-saturation: 100%; /* app background saturation [default: 100%] */
-	--background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
-	--background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
-	--background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
-	--background-blur: 0px; /* app background blur [default: 0px] */
-
-	/* HOME BUTTON ICON */
-	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
-	/*--home-icon: url(https://i.gifer.com/7b7Q.gif); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
-	--home-position: center; /* home button icon position [default: center] */
-	--home-size: 40px; /* home button icon size [default: 40px] */
-	
-	/* MODAL BACKDROP */
-	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
-
-	/* GENERAL */
-	--text-normal: rgb(220, 221, 222); /* color of default discord text */
-	--text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
-	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
-	--members-width: 240px; /* member list width [default: 240px] */
-  
-	/* APP BACKGROUND */
-	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
-  
-	/* HOME BUTTON ICON */
-	--home-icon: url(https://clearvision.github.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
-	--home-position: center; /* home button icon position [default: center] */
-	--home-size: 40px; /* home button icon size [default: 40px] */
-  
-	/* CHANNEL COLORS */
-	--channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
-	--channel-color: rgba(255, 255, 255, 0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
-	--channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
-	--muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
-
-	--text-normal: rgb(220, 221, 222); /* color of default discord text */
-	--text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
-	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
-	--members-width: 240px; /* member list width [default: 240px] */
-
-	/* End of Clearvision settings */
-
-	/* Radial Status settings */
-	--rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
-  	--rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
-  	--rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
-
-  	--rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
-  	--rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
-  	--rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
-
- 	--rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-
-  	--rs-online-color: var(--online-color); /* Colour for online status */
-  	--rs-idle-color: var(--idle-color); /* Colour for idle status */
-  	--rs-dnd-color: var(--dnd-color); /* Colour for dnd status */
-  	--rs-offline-color: var(--offline-color); /* Colour for offline status */
-  	--rs-streaming-color: var(--streaming-color); /* Colour for streaming status */
-  	--rs-invisible-color: var(--offline-color); /* Colour for invisible status - Note: this will only show for your own invisibility */
-  	--rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
-
-  	--rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-	/* End of Radial Status settings */
-
-	--font-primary: var(--main-font) !important;
-    --font-display: var(--main-font) !important;
-    --font-headline: var(--main-font) !important;
+/*Settings accross all clients when the plugin is loaded*/
+body.anyclient {
+    /* CLEARVISION SETTINGS */ /*Note: I kinda messed up the config order. Feel free to copy the orignial config and paste it here :3 */
+    --main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+    --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+    /* End of Clearvision settings */
 }
 /* The rest of the settings (They take in variables) */
 
 /* Using body.anyclient forces the user to use the per client theme plugin. Thats why its there, because otherwise the theme doesn't work */
 /* Same thing for :root. It doesn't work as the variables defined end up 1 level below. Applying settings to the body of the document does the same
-as if they were applied at the root*/
-
-body.anyclient { /* Replaced ":root" (Original Clearvision config) to "body.anyclient" otherwise it does not work. */
-	
-	/* MODAL BACKDROP */
-	--backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(---background-image)] */
-	--backdrop-position: var(--background-position); /* modal backdrop position [default: var(---background-position)] */
-	--backdrop-size: var(--background-size); /* modal backdrop size [default: var(---background-size)] */
-	--backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(---background-repeat)] */
-	--backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
-	--backdrop-brightness: var(--background-brightness); /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
-	--backdrop-contrast: var(--background-contrast); /* modal backdrop contrast [default: var(---background-contrast)] */
-	--backdrop-saturation: var(--background-saturation); /* modal backdrop saturation [default: var(---background-saturation)] */
-	--backdrop-invert: var(--background-invert); /* modal backdrop invert (0 - 100%)  [default: var(---background-invert)] */
-	--backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(---background-grayscale)] */
-	--backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(---background-sepia)] */
-	--backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
-	
-	/* USER POPOUT BACKGROUND */
-	--user-popout-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
-	--user-popout-position: var(--background-position); /* user popout background position [default: var(---background-position)] */
-	--user-popout-size: var(--background-size); /* user popout background size [default: var(---background-size)] */
-	--user-popout-repeat: var(--background-repeat); /* user popout background repeat [default: var(---background-repeat)] */
-	--user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
-	--user-popout-brightness: var(--background-brightness); /* user popout background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
-	--user-popout-contrast: var(--background-contrast); /* user popout background contrast [default: var(---background-contrast)] */
-	--user-popout-saturation: var(--background-saturation); /* user popout background saturation [default: var(---background-saturation)] */
-	--user-popout-invert: var(--background-invert); /* user popout background invert (0 - 100%) [default: var(---background-invert)] */
-	--user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [default: var(---background-grayscale)] */
-	--user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [default: var(---background-sepia)] */
-	--user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
-	
-	/* USER MODAL BACKGROUND */
-	--user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
-	--user-modal-position: var(--background-position); /* user modal background position [default: var(---background-position)] */
-	--user-modal-size: var(--background-size); /* user modal background size [default: var(---background-size)] */
-	--user-modal-repeat: var(--background-repeat); /* user modal background repeat [default: var(---background-repeat)] */
-	--user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
-	--user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
-	--user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(---background-contrast)] */
-	--user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(---background-saturation)] */
-	--user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [default: var(---background-invert)] */
-	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(---background-grayscale)] */
-	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
-	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
-	
-	/* THEME BD COLORS */
-	--bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
-	--bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
-	--bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
-	/* End of Clearvision settings */
-
-	/* FONT SHIT */
-    --font-primary: var(--main-font) !important;
-    --font-display: var(--main-font) !important;
-    --font-headline: var(--main-font) !important;
-
-	/*CUSTOM EDITS SETTINGS*/
-	--shrink-members: 65px;
-	--shrink-servers: 30px;
-	--shrink-channels: 55px;
-    
-}
+ as if they were applied at the root*/
 
 /* It uses this if it can't find what client you are using */
 body:not(.anyclient) {
-	/* CLEARVISION SETTINGS */
-	/* ACCENT COLORS */
-	--main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-	--hover-color: #4b72a9; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
-	--success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
-	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
-	--url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
-  
-	/* STATUS COLORS */
-	--online-color: var(--main-color); /* online status color (hex, rgb or hsl) [default: #43b581] */
-	--idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
-	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
-	--streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
-	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
-	--background-image: url(https://bido67.github.io/discord-backgrounds-bido/duckbg.png) rgba(0,0,0,0.5); /**/
-	/* End of Clearvision settings */
+    /* CLEARVISION SETTINGS */
+    /* ACCENT COLORS */
+    --main-color: #9fc6d7; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+    --hover-color: #4b72a9; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+    --success-color: var(--main-color); /* success accent color (hex, rgb or hsl) [default: #43b581] */
+    --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+    --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
 
-	/* My theme */
+    /* STATUS COLORS */
+    --online-color: var(--main-color); /* online status color (hex, rgb or hsl) [default: #43b581] */
+    --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+    --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+    --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
+    --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/duckbg.png) rgba(0, 0, 0, 0.5); /**/
+    /* End of Clearvision settings */
+
+    /* My theme */
     --image-attachement-opacity: 1;
-	/* CLEARVISION SETTINGS */ /*Note: I kinda messed up the config order. Feel free to copy the orignial config and paste it here :3 */
-	/* GENERAL */
-	--main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
-	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
-	--server-columns: 2; /* amount of server list columns [default: 1] */
-	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
-	--members-width: 240px; /* member list width [default: 240px] */
-	--avatar-roundness: var(--rs-avatar-shape); /* avatar roundness (0% for squares, 50% for circles) [default: 50%] */
-	/* APP BACKGROUND */
-	--background-shading: 50%; /* app background shading (0 for complete smoothness) [default: 100%] */
-	--background-overlay: rgba(0, 0, 0, 0.45); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	/*Note: Due to theme edits, this is set to none.*/
-	/*--background-image: none; /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
-	--background-position: center; /* app background position [default: center] */
-	--background-size: cover; /* app background size [default: cover] */
-	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
-	--background-attachment: fixed; /* app background attachment [default: fixed] */
-	--background-brightness: 90%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
-	--background-contrast: 90%; /* app background contrast [default: 100%] */
-	--background-saturation: 100%; /* app background saturation [default: 100%] */
-	--background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
-	--background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
-	--background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
-	--background-blur: 0px; /* app background blur [default: 0px] */
-
-	/* HOME BUTTON ICON */
-	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
-	/*--home-icon: url(https://i.gifer.com/7b7Q.gif); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
-	--home-position: center; /* home button icon position [default: center] */
-	--home-size: 40px; /* home button icon size [default: 40px] */
-	
-	/* MODAL BACKDROP */
-	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
-
-	/* GENERAL */
-	--text-normal: rgb(220, 221, 222); /* color of default discord text */
-	--text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
-	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
-	--members-width: 240px; /* member list width [default: 240px] */
-  
-	/* APP BACKGROUND */
-	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
-  
-	/* HOME BUTTON ICON */
-	--home-icon: url(https://clearvision.github.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
-	--home-position: center; /* home button icon position [default: center] */
-	--home-size: 40px; /* home button icon size [default: 40px] */
-  
-	/* CHANNEL COLORS */
-	--channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
-	--channel-color: rgba(255, 255, 255, 0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
-	--channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
-	--muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
-
-	--text-normal: rgb(220, 221, 222); /* color of default discord text */
-	--text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
-	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
-	--members-width: 240px; /* member list width [default: 240px] */
-
-	/* End of Clearvision settings */
-
-	/* Radial Status settings */
-	--rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
-  	--rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
-  	--rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
-
-  	--rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
-  	--rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
-  	--rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
-
- 	--rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-
-  	--rs-online-color: var(--online-color); /* Colour for online status */
-  	--rs-idle-color: var(--idle-color); /* Colour for idle status */
-  	--rs-dnd-color: var(--dnd-color); /* Colour for dnd status */
-  	--rs-offline-color: var(--offline-color); /* Colour for offline status */
-  	--rs-streaming-color: var(--streaming-color); /* Colour for streaming status */
-  	--rs-invisible-color: var(--offline-color); /* Colour for invisible status - Note: this will only show for your own invisibility */
-  	--rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
-
-  	--rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-	/* End of Radial Status settings */
-
-	--font-primary: var(--main-font) !important;
-    --font-display: var(--main-font) !important;
-    --font-headline: var(--main-font) !important;
-
-	
-	/* MODAL BACKDROP */
-	--backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(---background-image)] */
-	--backdrop-position: var(--background-position); /* modal backdrop position [default: var(---background-position)] */
-	--backdrop-size: var(--background-size); /* modal backdrop size [default: var(---background-size)] */
-	--backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(---background-repeat)] */
-	--backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
-	--backdrop-brightness: var(--background-brightness); /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
-	--backdrop-contrast: var(--background-contrast); /* modal backdrop contrast [default: var(---background-contrast)] */
-	--backdrop-saturation: var(--background-saturation); /* modal backdrop saturation [default: var(---background-saturation)] */
-	--backdrop-invert: var(--background-invert); /* modal backdrop invert (0 - 100%)  [default: var(---background-invert)] */
-	--backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(---background-grayscale)] */
-	--backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(---background-sepia)] */
-	--backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
-	
-	/* USER POPOUT BACKGROUND */
-	--user-popout-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
-	--user-popout-position: var(--background-position); /* user popout background position [default: var(---background-position)] */
-	--user-popout-size: var(--background-size); /* user popout background size [default: var(---background-size)] */
-	--user-popout-repeat: var(--background-repeat); /* user popout background repeat [default: var(---background-repeat)] */
-	--user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
-	--user-popout-brightness: var(--background-brightness); /* user popout background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
-	--user-popout-contrast: var(--background-contrast); /* user popout background contrast [default: var(---background-contrast)] */
-	--user-popout-saturation: var(--background-saturation); /* user popout background saturation [default: var(---background-saturation)] */
-	--user-popout-invert: var(--background-invert); /* user popout background invert (0 - 100%) [default: var(---background-invert)] */
-	--user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [default: var(---background-grayscale)] */
-	--user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [default: var(---background-sepia)] */
-	--user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
-	
-	/* USER MODAL BACKGROUND */
-	--user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
-	--user-modal-position: var(--background-position); /* user modal background position [default: var(---background-position)] */
-	--user-modal-size: var(--background-size); /* user modal background size [default: var(---background-size)] */
-	--user-modal-repeat: var(--background-repeat); /* user modal background repeat [default: var(---background-repeat)] */
-	--user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
-	--user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
-	--user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(---background-contrast)] */
-	--user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(---background-saturation)] */
-	--user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [default: var(---background-invert)] */
-	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(---background-grayscale)] */
-	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
-	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
-	
-	/* THEME BD COLORS */
-	--bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
-	--bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
-	--bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
-	/* End of Clearvision settings */
-
-	/* FONT SHIT */
-    --font-primary: var(--main-font) !important;
-    --font-display: var(--main-font) !important;
-    --font-headline: var(--main-font) !important;
-	
-	/*CUSTOM EDITS SETTINGS*/
-	--shrink-members: 65px;
-	--shrink-servers: 30px;
-	--shrink-channels: 55px;
+    /*Note: I kinda messed up the config order. Feel free to copy the orignial config and paste it here :3 */
+    /* End of Clearvision settings */
 }
-body:not([inputtype="mouse"]):not([inputtype="touch"]):not([inputtype="pen"]){
-	--shrink-settings-opacity: 0;
-	--shrink-settings-pointer-events: none;
-	--shrink-channels-margin-left: 0px;
-	--group-display: block;
+body:not([inputtype="mouse"]):not([inputtype="touch"]):not([inputtype="pen"]) {
+    --shrink-settings-opacity: 0;
+    --shrink-settings-pointer-events: none;
+    --shrink-channels-margin-left: 0px;
+    --group-display: flex;
 }
-body[inputtype="mouse"]{
-	--shrink-settings-opacity: 0;
-	--shrink-settings-pointer-events: none;
-	--shrink-channels-margin-left: 0px;
-	--group-display:none;
+body[inputtype="mouse"] {
+    --shrink-settings-opacity: 0;
+    --shrink-settings-pointer-events: none;
+    --shrink-channels-margin-left: 0px;
+    --group-display: none;
 }
 body[inputtype="touch"],
-body[inputtype="pen"]{
-     /*CUSTOM EDITS SETTINGS*/
-	--shrink-members: var(--channels-width);
-	--shrink-servers: 72px !important;
-	--shrink-channels: var(--members-width);
-	--shrink-channels-margin-left: 8px;
-	--shrink-settings-opacity: 1;
-	--shrink-settings-pointer-events: all;
-	--group-display: block;
- }
-
+body[inputtype="pen"] {
+    /*CUSTOM EDITS SETTINGS*/
+    --shrink-members: var(--members-width);
+    --shrink-servers: 72px !important;
+    --shrink-channels: var(--channels-width);
+    --shrink-channels-margin-left: 8px;
+    --shrink-settings-opacity: 1;
+    --shrink-settings-pointer-events: all;
+    --group-display: flex;
+}
 
 /* Image transparency for transparent discord */
 .imageWrapper-oMkQl4 {
-	opacity: var(--image-attachement-opacity); 
+    opacity: var(--image-attachement-opacity);
 }
+/*Settings accross all clients no matter if the plugin is present or not.*/
+body {
+    /* Replaces ":root" (Original Clearvision config) to "body" otherwise it does not work. */
+    /*Clearvision settings*/
+    /* GENERAL */
+    --main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+    --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+    --server-columns: 2; /* amount of server list columns [default: 1] */
+    --avatar-roundness: var(--rs-avatar-shape); /* avatar roundness (0% for squares, 50% for circles) [default: 50%] */
+    /* APP BACKGROUND */
+    --background-shading: 50%; /* app background shading (0 for complete smoothness) [default: 100%] */
+    --background-overlay: rgba(0, 0, 0, 0.45); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+    /*Note: Due to theme edits, this is set to none.*/
+    --background-image: none; /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
+    --background-position: center; /* app background position [default: center] */
+    --background-size: cover; /* app background size [default: cover] */
+    --background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
+    --background-attachment: fixed; /* app background attachment [default: fixed] */
+    --background-brightness: 90%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+    --background-contrast: 90%; /* app background contrast [default: 100%] */
+    --background-saturation: 100%; /* app background saturation [default: 100%] */
+    --background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
+    --background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
+    --background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
+    --background-blur: 0px; /* app background blur [default: 0px] */
+    /* MODAL BACKDROP */
+    --backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+    /* GENERAL */
+    --text-normal: rgb(220, 221, 222); /* color of default discord text */
+    --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+    --channels-width: 240px; /* channel list width (240px for Discord default) [default: 220px] */
+    --members-width: 240px; /* member list width [default: 240px] */
 
+    /* APP BACKGROUND */
+    --background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
+
+    /* HOME BUTTON ICON */
+    --home-icon: url(https://clearvision.github.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
+    --home-position: center; /* home button icon position [default: center] */
+    --home-size: 40px; /* home button icon size [default: 40px] */
+
+    /* CHANNEL COLORS */
+    --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
+    --channel-color: rgba(255, 255, 255, 0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+    --channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
+    --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+
+    --text-normal: rgb(220, 221, 222); /* color of default discord text */
+    --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+    --channels-width: 240px; /* channel list width (240px for Discord default) [default: 220px] */
+    --members-width: 240px; /* member list width [default: 240px] */
+
+    /* MODAL BACKDROP */
+    --backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(---background-image)] */
+    --backdrop-position: var(--background-position); /* modal backdrop position [default: var(---background-position)] */
+    --backdrop-size: var(--background-size); /* modal backdrop size [default: var(---background-size)] */
+    --backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(---background-repeat)] */
+    --backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
+    --backdrop-brightness: var(--background-brightness); /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
+    --backdrop-contrast: var(--background-contrast); /* modal backdrop contrast [default: var(---background-contrast)] */
+    --backdrop-saturation: var(--background-saturation); /* modal backdrop saturation [default: var(---background-saturation)] */
+    --backdrop-invert: var(--background-invert); /* modal backdrop invert (0 - 100%)  [default: var(---background-invert)] */
+    --backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(---background-grayscale)] */
+    --backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(---background-sepia)] */
+    --backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
+
+    /* USER POPOUT BACKGROUND */
+    --user-popout-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
+    --user-popout-position: var(--background-position); /* user popout background position [default: var(---background-position)] */
+    --user-popout-size: var(--background-size); /* user popout background size [default: var(---background-size)] */
+    --user-popout-repeat: var(--background-repeat); /* user popout background repeat [default: var(---background-repeat)] */
+    --user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
+    --user-popout-brightness: var(--background-brightness); /* user popout background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
+    --user-popout-contrast: var(--background-contrast); /* user popout background contrast [default: var(---background-contrast)] */
+    --user-popout-saturation: var(--background-saturation); /* user popout background saturation [default: var(---background-saturation)] */
+    --user-popout-invert: var(--background-invert); /* user popout background invert (0 - 100%) [default: var(---background-invert)] */
+    --user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [default: var(---background-grayscale)] */
+    --user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [default: var(---background-sepia)] */
+    --user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
+
+    /* USER MODAL BACKGROUND */
+    --user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
+    --user-modal-position: var(--background-position); /* user modal background position [default: var(---background-position)] */
+    --user-modal-size: var(--background-size); /* user modal background size [default: var(---background-size)] */
+    --user-modal-repeat: var(--background-repeat); /* user modal background repeat [default: var(---background-repeat)] */
+    --user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
+    --user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
+    --user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(---background-contrast)] */
+    --user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(---background-saturation)] */
+    --user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [default: var(---background-invert)] */
+    --user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(---background-grayscale)] */
+    --user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
+    --user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
+
+    /* THEME BD COLORS */
+    --bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
+    --bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
+    --bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
+    /* End of Clearvision settings */
+
+    /* Radial Status settings */
+    --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+    --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+    --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+    --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+    --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+    --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+    --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+
+    --rs-online-color: var(--online-color); /* Colour for online status */
+    --rs-idle-color: var(--idle-color); /* Colour for idle status */
+    --rs-dnd-color: var(--dnd-color); /* Colour for dnd status */
+    --rs-offline-color: var(--offline-color); /* Colour for offline status */
+    --rs-streaming-color: var(--streaming-color); /* Colour for streaming status */
+    --rs-invisible-color: var(--offline-color); /* Colour for invisible status - Note: this will only show for your own invisibility */
+    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+
+    --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+    /* End of Radial Status settings */
+
+    /* FONT SHIT */
+    --font-primary: var(--main-font) !important;
+    --font-display: var(--main-font) !important;
+    --font-headline: var(--main-font) !important;
+
+    /*CUSTOM EDITS SETTINGS*/
+    --shrink-members: 65px;
+    --shrink-servers: 30px;
+    --shrink-channels: 55px;
+}
 
 /*Fixing a thing that isn't fixed in clearvision, aka the phone in the dms */
-svg.mask-2Me5HY>rect[fill="rgba(59, 165, 92, 1)"],
-svg.mask-2Me5HY>rect[fill="#3ba55c"]{
+svg.mask-2Me5HY > rect[fill="rgba(59, 165, 92, 1)"],
+svg.mask-2Me5HY > rect[fill="#3ba55c"] {
     fill: var(--online-color) !important;
 }
-svg.mask-2Me5HY>rect[fill="rgba(250, 166, 26, 1)"], 
-svg.mask-2Me5HY>rect[fill=" #faa61a"]{
+svg.mask-2Me5HY > rect[fill="rgba(250, 166, 26, 1)"],
+svg.mask-2Me5HY > rect[fill=" #faa61a"] {
     fill: var(--idle-color) !important;
 }
-svg.mask-2Me5HY>rect[fill="rgba(237, 66, 69, 1)"],
-svg.mask-2Me5HY>rect[fill="#ed4245"]{
+svg.mask-2Me5HY > rect[fill="rgba(237, 66, 69, 1)"],
+svg.mask-2Me5HY > rect[fill="#ed4245"] {
     fill: var(--dnd-color) !important;
 }
-svg.mask-2Me5HY>rect[fill="rgba(116, 127, 141, 1)"],
-svg.mask-2Me5HY>rect[fill="#747f8d"]{
+svg.mask-2Me5HY > rect[fill="rgba(116, 127, 141, 1)"],
+svg.mask-2Me5HY > rect[fill="#747f8d"] {
     fill: var(--offline-color) !important;
 }
-svg.mask-2Me5HY>rect[fill="rgba(89, 54, 149, 1)"],
-svg.mask-2Me5HY>rect[fill="#593695"]{
+svg.mask-2Me5HY > rect[fill="rgba(89, 54, 149, 1)"],
+svg.mask-2Me5HY > rect[fill="#593695"] {
     fill: var(--streaming-color) !important;
 }
 
-
-
 /* Support for Platform Indcator Plugin */
-.PI-indicatorContainer>svg[data-status="online"]{
+.PI-indicatorContainer > svg[data-status="online"] {
     color: var(--online-color) !important;
 }
-.PI-indicatorContainer>svg[data-status="streaming"]{
+.PI-indicatorContainer > svg[data-status="streaming"] {
     color: var(--streaming-color) !important;
 }
 
-.PI-indicatorContainer>svg[data-status="idle"]{
+.PI-indicatorContainer > svg[data-status="idle"] {
     color: var(--idle-color) !important;
 }
 
-.PI-indicatorContainer>svg[data-status="dnd"]{
+.PI-indicatorContainer > svg[data-status="dnd"] {
     color: var(--dnd-color) !important;
 }
 
-
 /* Support for Channel Tabs plugin */
-.channelTabs-onlineIcon{
+.channelTabs-onlineIcon {
     stroke: var(--online-color) !important;
 }
-.channelTabs-idleIcon{
+.channelTabs-idleIcon {
     stroke: var(--idle-color) !important;
 }
-.channelTabs-doNotDisturbIcon{
+.channelTabs-doNotDisturbIcon {
     stroke: var(--dnd-color) !important;
 }
-.channelTabs-offlineIcon{
+.channelTabs-offlineIcon {
     stroke: var(--offline-color) !important;
 }
 
-:root{
+:root {
     --funny1: 0.4; /*server thing  */
     --funny3: 0.4; /* Message container*/
     --funny4: 0.4; /*Header, member bar & channel tabs */
@@ -557,20 +385,20 @@ svg.mask-2Me5HY>rect[fill="#593695"]{
 
 /* This doesn't currently seem to be in clearvision so... */
 .optionButton-1W9f7G,
-.prompt-1sE27N{
-	background: rgba(0, 0, 0, calc(var(--background-shading) * var(--funny3)));
-	box-shadow: 0 0 10px rgba(0, 0, 0, calc(var(--background-shading) * var(--funny3)));
+.prompt-1sE27N {
+    background: rgba(0, 0, 0, calc(var(--background-shading) * var(--funny3)));
+    box-shadow: 0 0 10px rgba(0, 0, 0, calc(var(--background-shading) * var(--funny3)));
 }
-.optionButton-1W9f7G{
-    border-color: var(--main-color)
+.optionButton-1W9f7G {
+    border-color: var(--main-color);
 }
-.optionButton-1W9f7G:hover{
-    border-color: var(--hover-color)
+.optionButton-1W9f7G:hover {
+    border-color: var(--hover-color);
 }
 
 /******* fixed some shading from clearvision *******/
 
-.theme-dark .scroller-3X7KbA{
+.theme-dark .scroller-3X7KbA {
     background: rgba(0, 0, 0, calc(var(--background-shading) * var(--funny1)));
 }
 .base-2jDfDU .pageContainer-36uo3F {
@@ -635,47 +463,45 @@ svg.mask-2Me5HY>rect[fill="#593695"]{
     background: rgba(0, 0, 0, calc(var(--background-shading) * var(--funny1)));
 }
 .typeWindows-2-g3UY {
-/*Top bar shadow*/
+    /*Top bar shadow*/
     background: rgba(0, 0, 0, calc(var(--background-shading) * var(--funny4)));
     box-shadow: 0 0 20px rgba(0, 0, 0, calc(var(--background-shading) * var(--funny4)));
 }
 
 /******* Channel tabs plugin support *********/
-#channelTabs-container{
+#channelTabs-container {
     background: rgba(0, 0, 0, calc(var(--background-shading) * var(--funny4)));
 }
-.channelTabs-fav
-.channelTabs-tab {
+.channelTabs-fav .channelTabs-tab {
     background: rgba(0, 0, 0, calc(var(--background-shading) * var(--funny1)));
 }
-.channelTabs-selected{
+.channelTabs-selected {
     background: var(--main-color);
     color: var(--hover-color);
 }
-.channelTabs-selected>span,
-.channelTabs-selected>div>span{
+.channelTabs-selected > span,
+.channelTabs-selected > div > span {
     color: var(--hover-color);
 }
 .channelTabs-fav:hover,
 .channelTabs-tab:hover {
     background: var(--hover-color);
 }
-.channelTabs-fav:hover>span,
-.channelTabs-fav:hover>div>span,
-.channelTabs-tab:hover>span,
-.channelTabs-tab:hover>div>span{
+.channelTabs-fav:hover > span,
+.channelTabs-fav:hover > div > span,
+.channelTabs-tab:hover > span,
+.channelTabs-tab:hover > div > span {
     color: var(--main-color);
 }
 
-.channelTabs-selected:hover{
+.channelTabs-selected:hover {
     background: var(--hover-color);
-    
 }
-.channelTabs-selected:hover>span,
-.channelTabs-selected:hover>div>span{
+.channelTabs-selected:hover > span,
+.channelTabs-selected:hover > div > span {
     color: var(--main-color);
 }
-.peopleColumn-1wMU14{
+.peopleColumn-1wMU14 {
     background: rgba(0, 0, 0, calc(var(--background-shading) * var(--funny3)));
 }
 /****** Colapsing channel list + member list ********/
@@ -689,42 +515,43 @@ svg.mask-2Me5HY>rect[fill="#593695"]{
 }
 
 /* Channel List */
-.sidebar-1tnWFu{    
+.sidebar-1tnWFu {
     width: var(--shrink-channels);
 }
-.sidebar-1tnWFu:hover{
+.sidebar-1tnWFu:hover {
     width: var(--channels-width);
 }
-.sidebar-1tnWFu .channel-1Shao0{
+.sidebar-1tnWFu .channel-1Shao0 {
     margin-left: var(--shrink-channels-margin-left);
 }
-.sidebar-1tnWFu:hover .channel-1Shao0{
+.sidebar-1tnWFu:hover .channel-1Shao0 {
     margin-left: 8px;
 }
-.sidebar-1tnWFu .container-YkUktl>.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz {
+.sidebar-1tnWFu .container-YkUktl > .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz {
     opacity: var(--shrink-settings-opacity);
     pointer-events: var(--shrink-settings-pointer-events);
 }
-.sidebar-1tnWFu:hover .container-YkUktl>.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz {
+.sidebar-1tnWFu:hover .container-YkUktl > .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz {
     opacity: 1;
     pointer-events: all;
 }
 /* Member list */
-.members-3WRCEx{
+.members-3WRCEx {
     width: var(--shrink-members);
 }
-.members-3WRCEx:hover{
-	--group-display: block;
+.members-3WRCEx:hover {
+    --group-display: block;
     width: var(--members-width);
 }
-[aria-label="Servers sidebar"]
-{
+[aria-label="Servers sidebar"] {
     width: var(--shrink-servers);
 }
-[aria-label="Servers sidebar"]:hover
-{
+[aria-label="Servers sidebar"]:hover {
     width: 72px;
 }
-.membersWrap-3NUR2t{
-	flex-basis: 0px;
+.membersWrap-3NUR2t {
+    flex-basis: 0px;
+}
+.members-3WRCEx .membersGroup-2eiWxl {
+    display: var(--group-display) !important;
 }
