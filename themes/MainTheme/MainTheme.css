@@ -169,12 +169,26 @@ body:not([inputtype="mouse"]):not([inputtype="touch"]):not([inputtype="pen"]) {
     --shrink-settings-pointer-events: none;
     --shrink-channels-margin-left: 0px;
     --group-display: flex;
+    --message-wrapper-width: 100%;
+	--message-form-width: 25%;
+	--message-form-width-hover: 60%;
+	--message-form-width-focus: calc(var(--message-wrapper-width) - 3%);
+	--message-form-height: 15px;
+	--message-form-height-hover: 10%;
+	--message-form-height-focus: 50%;
 }
 body[inputtype="mouse"] {
     --shrink-settings-opacity: 0;
     --shrink-settings-pointer-events: none;
     --shrink-channels-margin-left: 0px;
     --group-display: none;
+    --message-wrapper-width: 100%;
+	--message-form-width: 25%;
+	--message-form-width-hover: 60%;
+	--message-form-width-focus: calc(var(--message-wrapper-width) - 3%);
+	--message-form-height: 15px;
+	--message-form-height-hover: 10%;
+	--message-form-height-focus: 50%;
 }
 body[inputtype="touch"],
 body[inputtype="pen"] {
@@ -186,6 +200,13 @@ body[inputtype="pen"] {
     --shrink-settings-opacity: 1;
     --shrink-settings-pointer-events: all;
     --group-display: flex;
+    --message-wrapper-width: 100%;
+	--message-form-width: calc(var(--message-wrapper-width) - 3%);
+	--message-form-width-hover: var(--message-form-width);
+	--message-form-width-focus: var(--message-form-width);
+	--message-form-height: 50%;
+	--message-form-height-hover: var(--message-form-height);
+	--message-form-height-focus: var(--message-form-height);
 }
 
 /* Image transparency for transparent discord */
@@ -323,13 +344,7 @@ body {
     --shrink-members: 65px;
     --shrink-servers: 30px;
     --shrink-channels: 55px;
-	--message-wrapper-width: 100%;
-	--message-form-width: 25%;
-	--message-form-width-hover: 60%;
-	--message-form-width-focus: calc(var(--message-wrapper-width) - 3%);
-	--message-form-height: 15px;
-	--message-form-height-hover: 10%;
-	--message-form-height-focus: 50%;
+	
 }
 
 /*Fixing a thing that isn't fixed in clearvision, aka the phone in the dms */
