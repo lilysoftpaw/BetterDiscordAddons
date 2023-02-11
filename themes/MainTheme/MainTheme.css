@@ -230,6 +230,12 @@ body[inputtype="touch"] {
 
     --shrink-message-wrapper-width: 100%;
 	--shrink-message-form-height: 50%;
+    --shrink-message-form-width: calc(var(--shrink-message-wrapper-width) - 3%);
+	--shrink-message-form-width-hover: var(--shrink-message-form-width);
+	--shrink-message-form-width-focus: var(--shrink-message-form-width);
+
+    --shrink-message-form-height-hover: var(--shrink-message-form-height);
+	--shrink-message-form-height-focus: var(--shrink-message-form-height);
 
     --shrink-members-group-height: 40px;
     --shrink-members-group-opacity: 0.85;
@@ -238,12 +244,7 @@ body[inputtype="touch"] {
 }
 /* Found input type, but these settings are comon to all input types */
 body[inputtype="touch"], body[inputtype="mouse"], body[inputtype="pen"]{
-    --shrink-message-form-width: calc(var(--shrink-message-wrapper-width) - 3%);
-	--shrink-message-form-width-hover: var(--shrink-message-form-width);
-	--shrink-message-form-width-focus: var(--shrink-message-form-width);
-
-    --shrink-message-form-height-hover: var(--shrink-message-form-height);
-	--shrink-message-form-height-focus: var(--shrink-message-form-height);
+    --random-value-to-ocupy-this-spot: 5px;
 }
 
 /* Image transparency for transparent discord */
