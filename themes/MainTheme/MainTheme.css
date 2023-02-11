@@ -647,11 +647,11 @@ main.chatContent-3KubbW{
 	width: var(--shrink-message-wrapper-width);
  }
  .form-3gdLxP:not(:hover):not(:focus):not(:focus-within){
-	max-height: var(--message-form-height);
+	max-height: var(--shrink-message-form-height);
 	width: var(--shrink-message-form-width);
  }
  .form-3gdLxP:hover{
-	max-height: var(--message-form-height-hover);
+	max-height: var(--shrink-message-form-height-hover);
 	width: var(--shrink-message-form-width-hover);
  }
  .form-3gdLxP:focus, .form-3gdLxP:focus-within, .form-3gdLxP:focus-visible{
