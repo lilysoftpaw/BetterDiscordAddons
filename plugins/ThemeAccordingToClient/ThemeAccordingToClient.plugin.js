@@ -1,6 +1,6 @@
 /**
  * @name Theme according to client
- * @version 1.0.2
+ * @version 1.1.0
  * @description Use the same theme file for Stable, PTB and Canary but with different settings! The body will get a class according to its type!     Classes: Stable: .stable | PTB: .ptb | Canary: .canary | Any: .anyclient
  * @author Duck-Chan
  * @authorId 598208193772126259
@@ -28,8 +28,6 @@ module.exports = class ThemeAccordingToClientPlugin {
                 document.body.classList.add("canary");
             }
         }
-        
-        
         document.body.classList.add("anyclient");
         //Add event listener for touch / mouse / pen input
         document.devFreeze = false;
