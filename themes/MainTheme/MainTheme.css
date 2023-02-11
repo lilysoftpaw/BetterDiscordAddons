@@ -1,6 +1,6 @@
 /**
  * @name Main Theme (DO NOT USE IN BETTER DISCORD)
- * @version 1.1.0
+ * @version 1.1.1
  * @description This file is normally imported in the actual theme. it only contains the meta in case you randomly decide to use it in betterdiscord even tho you are told not to.
  * @author Duck-Chan
  * @authorId 598208193772126259
@@ -580,6 +580,7 @@ main.chatContent-3KubbW,
 .members-3WRCEx .membersGroup-2eiWxl,
 .members-3WRCEx,
 .sidebar-1tnWFu *,
+.sidebar-1tnWFu,
 [aria-label="Servers sidebar"] {
     transition-property: all;
     transition-duration: 350ms;
