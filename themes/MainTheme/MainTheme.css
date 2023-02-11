@@ -20,7 +20,7 @@
  OG Theme Description: Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file.
  OG Theme Source https://github.com/DiscordStyles/RadialStatus
  OG Theme Website https://www.gibbu.me
- */
+*/
 
 /*
  ClearVision Version Whatever it is
@@ -117,15 +117,13 @@ body.development {
     /* End of Clearvision settings */
     --image-attachement-opacity: 1;
 }
-
-/* Example of how to make the background image of a client adapt to a vertical layout*/
-/*
- @media screen and (orientation: portrait) {
-	 body.canary {
-		 --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
-	 }
- }
- */
+/*Example of how to make the background image of a client adapt to a vertical layout*//*
+@media screen and (orientation: portrait) {
+	body.canary {
+		--background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
+	}
+}
+*/
 
 /*Settings accross all clients when the plugin is loaded*/
 body.anyclient {
@@ -134,7 +132,7 @@ body.anyclient {
     --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
     /* End of Clearvision settings */
 }
-/* The rest of the settings (They take in variables) */
+
 
 /* Using body.anyclient forces the user to use the per client theme plugin. Thats why its there, because otherwise the theme doesn't work */
 /* Same thing for :root. It doesn't work as the variables defined end up 1 level below. Applying settings to the body of the document does the same
@@ -164,55 +162,96 @@ body:not(.anyclient) {
     /*Note: I kinda messed up the config order. Feel free to copy the orignial config and paste it here :3 */
     /* End of Clearvision settings */
 }
+/* Input type NOT found */
 body:not([inputtype="mouse"]):not([inputtype="touch"]):not([inputtype="pen"]) {
     --shrink-settings-opacity: 0;
     --shrink-settings-pointer-events: none;
     --shrink-channels-margin-left: 0px;
-    --group-display: flex;
-    --message-wrapper-width: 100%;
-	--message-form-width: 25%;
-	--message-form-width-hover: 60%;
-	--message-form-width-focus: calc(var(--message-wrapper-width) - 3%);
-	--message-form-height: 15px;
-	--message-form-height-hover: 10%;
-	--message-form-height-focus: 50%;
+    --shrink-message-wrapper-width: 100%;
+	--shrink-message-form-width: 25%;
+	--shrink-message-form-width-hover: 60%;
+	--shrink-message-form-width-focus: calc(var(--shrink-message-wrapper-width) - 3%);
+	--shrink-message-form-height: 15px;
+	--shrink-message-form-height-hover: 10%;
+	--shrink-message-form-height-focus: 50%;
+    --shrink-members-group-height: 0px;
+    --shrink-members-group-opacity: 0;
+    --shrink-members-group-overflow: hidden;
+    --shrink-members-group-padding: 0px;
 }
+/* Found pen input type */
+body[inputtype="pen"] {
+    --shrink-members-width: 65px;
+    --shrink-servers-width: 30px;
+    --shrink-channels-width: 55px;
+    --shrink-settings-opacity: 0;
+    --shrink-settings-pointer-events: none;
+    --shrink-channels-margin-left: 0px;
+    --shrink-message-wrapper-width: 100%;
+	--shrink-message-form-width: 25%;
+	--shrink-message-form-width-hover: 60%;
+	--shrink-message-form-width-focus: calc(var(--shrink-message-wrapper-width) - 3%);
+	--shrink-message-form-height: 15px;
+	--shrink-message-form-height-hover: 10%;
+	--shrink-message-form-height-focus: 50%;
+    --shrink-members-group-height: 0px;
+    --shrink-members-group-opacity: 0;
+    --shrink-members-group-overflow: hidden;
+    --shrink-members-group-padding: 0px;
+}
+/* Found mouse input type */
 body[inputtype="mouse"] {
     --shrink-settings-opacity: 0;
     --shrink-settings-pointer-events: none;
     --shrink-channels-margin-left: 0px;
-    --group-display: none;
-    --message-wrapper-width: 100%;
-	--message-form-width: 25%;
-	--message-form-width-hover: 60%;
-	--message-form-width-focus: calc(var(--message-wrapper-width) - 3%);
-	--message-form-height: 15px;
-	--message-form-height-hover: 10%;
-	--message-form-height-focus: 50%;
+    --shrink-message-wrapper-width: 100%;
+	--shrink-message-form-width: 25%;
+	--shrink-message-form-width-hover: 60%;
+	--shrink-message-form-width-focus: calc(var(--shrink-message-wrapper-width) - 3%);
+	--shrink-message-form-height: 15px;
+	--shrink-message-form-height-hover: 10%;
+	--shrink-message-form-height-focus: 50%;
+    --shrink-members-group-height: 0px;
+    --shrink-members-group-opacity: 0;
+    --shrink-members-group-overflow: hidden;
+    --shrink-members-group-padding: 0px;
 }
-body[inputtype="touch"],
-body[inputtype="pen"] {
+/* Found touch input type */
+body[inputtype="touch"] {
     /*CUSTOM EDITS SETTINGS*/
-    --shrink-members: var(--members-width);
-    --shrink-servers: 72px !important;
-    --shrink-channels: var(--channels-width);
+    --shrink-members-width: var(--members-width);
+    --shrink-servers-width: var(--servers-width);
+    --shrink-channels-width: var(--channels-width);
+    
     --shrink-channels-margin-left: 8px;
+
     --shrink-settings-opacity: 1;
     --shrink-settings-pointer-events: all;
-    --group-display: flex;
-    --message-wrapper-width: 100%;
-	--message-form-width: calc(var(--message-wrapper-width) - 3%);
-	--message-form-width-hover: var(--message-form-width);
-	--message-form-width-focus: var(--message-form-width);
-	--message-form-height: 50%;
-	--message-form-height-hover: var(--message-form-height);
-	--message-form-height-focus: var(--message-form-height);
+
+    --shrink-message-wrapper-width: 100%;
+	--shrink-message-form-height: 50%;
+
+    --shrink-members-group-height: 40px;
+    --shrink-members-group-opacity: 0.85;
+    --shrink-members-group-overflow: hidden;
+    --shrink-members-group-padding: 20px 8px 0px 16px;
+}
+/* Found input type, but these settings are comon to all input types */
+body[inputtype="touch"], body[inputtype="mouse"], body[inputtype="pen"]{
+    --shrink-message-form-width: calc(var(--shrink-message-wrapper-width) - 3%);
+	--shrink-message-form-width-hover: var(--shrink-message-form-width);
+	--shrink-message-form-width-focus: var(--shrink-message-form-width);
+
+    --shrink-message-form-height-hover: var(--shrink-message-form-height);
+	--shrink-message-form-height-focus: var(--shrink-message-form-height);
 }
 
 /* Image transparency for transparent discord */
 .imageWrapper-oMkQl4 {
     opacity: var(--image-attachement-opacity);
 }
+/* The rest of the settings (They take in variables or are the same across the 5 Themes) */
+
 /*Settings accross all clients no matter if the plugin is present or not.*/
 body {
     /* Replaces ":root" (Original Clearvision config) to "body" otherwise it does not work. */
@@ -245,6 +284,7 @@ body {
     --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
     --channels-width: 240px; /* channel list width (240px for Discord default) [default: 220px] */
     --members-width: 240px; /* member list width [default: 240px] */
+    
 
     /* APP BACKGROUND */
     --background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
@@ -340,12 +380,17 @@ body {
     --font-display: var(--main-font) !important;
     --font-headline: var(--main-font) !important;
 
-    /*CUSTOM EDITS SETTINGS*/
-    --shrink-members: 65px;
-    --shrink-servers: 30px;
-    --shrink-channels: 55px;
+    /* My work, shrinks the channels, servers and members according to this. */
+    --shrink-members-width: 65px;
+    --shrink-servers-width: 30px;
+    --shrink-channels-width: 55px;
+
+    --servers-width: 72px;
 	
 }
+
+/* Below this line is my own work, I wrote this while betterdiscord was crashing a bunch. */
+
 
 /*Fixing a thing that isn't fixed in clearvision, aka the phone in the dms */
 svg.mask-2Me5HY > rect[fill="rgba(59, 165, 92, 1)"],
@@ -399,8 +444,9 @@ svg.mask-2Me5HY > rect[fill="#593695"] {
     stroke: var(--offline-color) !important;
 }
 
+/* TODO: Uhm yes i need to fix this here */
 :root {
-    --funny1: 0.4; /*server thing  */
+    --funny1: 0.4; /* server thing  */
     --funny3: 0.4; /* Message container*/
     --funny4: 0.4; /*Header, member bar & channel tabs */
 }
@@ -541,48 +587,50 @@ main.chatContent-3KubbW,
 }
 
 /* Channel List */
-.sidebar-1tnWFu {
-    width: var(--shrink-channels);
+.sidebar-1tnWFu:not(:hover) {
+    width: var(--shrink-channels-width);
 }
+/*
 .sidebar-1tnWFu:hover {
     width: var(--channels-width);
 }
-.sidebar-1tnWFu .channel-1Shao0 {
+*/
+
+.sidebar-1tnWFu:not(:hover) .channel-1Shao0 {
     margin-left: var(--shrink-channels-margin-left);
 }
-.sidebar-1tnWFu:hover .channel-1Shao0 {
+/*
+.sidebar-1tnWFu .channel-1Shao0 {
     margin-left: 8px;
-}
-.sidebar-1tnWFu .container-YkUktl > .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz {
+}*/
+.sidebar-1tnWFu:not(:hover) .container-YkUktl > .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz {
     opacity: var(--shrink-settings-opacity);
     pointer-events: var(--shrink-settings-pointer-events);
 }
-.sidebar-1tnWFu:hover .container-YkUktl > .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz {
+/*.sidebar-1tnWFu:hover .container-YkUktl > .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz {
     opacity: 1;
     pointer-events: all;
-}
+}*/
 /* Member list */
-.members-3WRCEx {
-    width: var(--shrink-members);
+.members-3WRCEx:not(:hover) {
+    width: var(--shrink-members-width);
 }
+/*
 .members-3WRCEx:hover {
-    --group-display: block;
     width: var(--members-width);
 }
-[aria-label="Servers sidebar"] {
-    width: var(--shrink-servers);
-}
-[aria-label="Servers sidebar"]:hover {
-    width: 72px;
+*/
+[aria-label="Servers sidebar"]:not(:hover) {
+    width: var(--shrink-servers-width);
 }
 .membersWrap-3NUR2t {
     flex-basis: 0px;
 }
 .members-3WRCEx:not(:hover) .membersGroup-2eiWxl {
-    height: 0px;
-	opacity: 0;
-	overflow: hidden;
-	padding: 0px;
+    height: var(--shrink-members-group-height);
+	opacity: var(--shrink-members-group-opacity);
+	overflow: var(--shrink-members-group-overflow);
+	padding: var(--shrink-members-group-padding);
 }
 /* Message Form */
 main.chatContent-3KubbW{
@@ -595,17 +643,17 @@ main.chatContent-3KubbW{
  }
  .messagesWrapper-RpOMA3 {
 	position: relative;
-	width: var(--message-wrapper-width);
+	width: var(--shrink-message-wrapper-width);
  }
- .form-3gdLxP:not(:hover){
+ .form-3gdLxP:not(:hover):not(:focus):not(:focus-within){
 	max-height: var(--message-form-height);
-	width: var(--message-form-width);
+	width: var(--shrink-message-form-width);
  }
  .form-3gdLxP:hover{
 	max-height: var(--message-form-height-hover);
-	width: var(--message-form-width-hover);
+	width: var(--shrink-message-form-width-hover);
  }
  .form-3gdLxP:focus, .form-3gdLxP:focus-within, .form-3gdLxP:focus-visible{
-	max-height: var(--message-form-height-focus);
-	width: var(--message-form-width-focus);
+	max-height: var(--shrink-message-form-height-focus);
+	width: var(--shrink-message-form-width-focus);
  }
