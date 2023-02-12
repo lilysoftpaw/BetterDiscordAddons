@@ -1,6 +1,6 @@
 /**
  * @name Conditional Theming
- * @version 1.2.0
+ * @version 1.2.1
  * @description Theme your discord under different conditions!
  * @author Duck-Chan
  * @authorId 598208193772126259
@@ -21,13 +21,13 @@ module.exports = class ConditionalTheme {
         document.body.attributes.setNamedItem(isInstalledAttrib);
         var isclientattrib = document.createAttribute("native");
         isclientattrib.value = false;
-	            
+        var releaseChannelattrib = document.createAttribute("releasechannel");
         try{
             var releaseChannel = DiscordNative.app.getReleaseChannel()
             // Edit to attribue instead of class, upcoming feature for my theme
-            var releaseChannelattrib = document.createAttribute("releasechannel");
+            
                 releaseChannelattrib.value = releaseChannel;
-	            document.body.attributes.setNamedItem(releaseChannelattrib);
+	            
             // Compat for my unupdated theme
                 document.body.classList.add(releaseChannel);
                 isclientattrib.value = true; // because its using the Release channel function, its native discord client :3
@@ -36,14 +36,17 @@ module.exports = class ConditionalTheme {
             console.log("Couldn't use release channel, using URL & Assuming WebBrowser")
             console.log(err)
             if (document.domain == "discord.com") {
+                releaseChannelattrib.value = "stable";
                 document.body.classList.add("stable");
             } else if (document.domain == "ptb.discord.com") {
+                releaseChannelattrib.value = "ptb";
                 document.body.classList.add("ptb");
             } else if (document.domain == "canary.discord.com") {
+                releaseChannelattrib.value = "canary";
                 document.body.classList.add("canary");
             }
         }
-        
+        document.body.attributes.setNamedItem(releaseChannelattrib);
         document.body.attributes.setNamedItem(isclientattrib);
         
         document.body.classList.add("anyclient");
