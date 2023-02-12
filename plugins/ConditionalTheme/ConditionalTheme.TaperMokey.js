@@ -14,6 +14,12 @@
 
 (function() {
     'use strict';
+    var isInstalledAttrib = document.createAttribute("contiditionalplugininstalled");
+        isInstalledAttrib.value = true;
+        document.querySelector("body").attributes.setNamedItem(isInstalledAttrib);
+        var isclientattrib = document.createAttribute("native");
+        isclientattrib.value = false;
+
     if(document.domain == "discord.com"){
         document.querySelector("body").classList.add("stable");
     }
@@ -32,4 +38,5 @@
 	            document.querySelector("body").attributes.setNamedItem(myshit);
             }
         })
+    document.querySelector("body").attributes.setNamedItem(isclientattrib);
 })();
