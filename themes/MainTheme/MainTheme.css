@@ -175,6 +175,10 @@ body:not([inputtype="mouse"]):not([inputtype="touch"]):not([inputtype="pen"]) {
 	--shrink-message-form-height-hover: 10%;
 	--shrink-message-form-height-focus: 50%;
     --shrink-message-form-buttons-width: 0px;
+    --shrink-message-form-attachements-padding: 0px;
+    --shrink-message-form-attachements-height: 0px;
+    --shrink-message-form-attachements-height-hover: 10px;
+    --shrink-message-form-attachements-height-focus: var(--message-form-attachements-height);
     --shrink-members-group-height: 0px;
     --shrink-members-group-opacity: 0;
     --shrink-members-group-overflow: hidden;
@@ -198,6 +202,10 @@ body[inputtype="pen"] {
 	--shrink-message-form-height-hover: 10%;
 	--shrink-message-form-height-focus: 50%;
     --shrink-message-form-buttons-width: 0px;
+    --shrink-message-form-attachements-padding: 0px;
+    --shrink-message-form-attachements-height: 0px;
+    --shrink-message-form-attachements-height-hover: 10px;
+    --shrink-message-form-attachements-height-focus: var(--message-form-attachements-height);
     --shrink-members-group-height: 0px;
     --shrink-members-group-opacity: 0;
     --shrink-members-group-overflow: hidden;
@@ -218,6 +226,10 @@ body[inputtype="mouse"] {
 	--shrink-message-form-height-hover: 10%;
 	--shrink-message-form-height-focus: 50%;
     --shrink-message-form-buttons-width: 0px;
+    --shrink-message-form-attachements-padding: 0px;
+    --shrink-message-form-attachements-height: 0px;
+    --shrink-message-form-attachements-height-hover: 10px;
+    --shrink-message-form-attachements-height-focus: var(--message-form-attachements-height);
     --shrink-members-group-height: 0px;
     --shrink-members-group-opacity: 0;
     --shrink-members-group-overflow: hidden;
@@ -249,6 +261,11 @@ body[inputtype="touch"] {
 	--shrink-message-form-height-focus: var(--shrink-message-form-height);
 
     --shrink-message-form-buttons-width: var(--buttons-witdh);
+
+    --shrink-message-form-attachements-padding: 20px 10px 10px;
+    --shrink-message-form-attachements-height: var(--message-form-attachements-height);
+    --shrink-message-form-attachements-height-hover: var(--message-form-attachements-height);
+    --shrink-message-form-attachements-height-focus: var(--message-form-attachements-height);
 
     --shrink-members-group-height: 40px;
     --shrink-members-group-opacity: 0.85;
@@ -402,6 +419,8 @@ body {
     --servers-width: 72px;
     --nitrogoal-height: 52px;
     --buttons-width: 40px;
+    --message-form-attachements-height: 216px;
+    --shrink-transition: all 350ms ease-in-out;
 	
 }
 
@@ -599,10 +618,11 @@ main.chatContent-3KubbW,
 .sidebar-1tnWFu,
 [aria-label="Servers sidebar"],
 .buttons-uaqb-5,
-.buttons-uaqb-5>*:not(.separator-3ng7S5) {
-    -webkit-transition: all 350ms ease-in-out;
-    -moz-transition: all 350ms ease-in-out;
-    transition: all 350ms ease-in-out;
+.buttons-uaqb-5>*:not(.separator-3ng7S5),
+.channelAttachmentArea-HwpkuQ {
+    -webkit-transition: var(--shrink-transition);
+    -moz-transition: var(--shrink-transition);
+    transition: var(--shrink-transition);
 }
 
 /* Channel List */
@@ -681,6 +701,22 @@ main.chatContent-3KubbW{
 /* Default buttons width */
 .buttons-uaqb-5>*:not(.separator-3ng7S5){
     width: var(--buttons-width);
+}
+/* Form attachements */
+.form-3gdLxP:not(:hover):not(:focus):not(:focus-within) .channelAttachmentArea-HwpkuQ{
+    height: var(--shrink-message-form-attachements-height);
+    padding: var(--shrink-message-form-attachements-padding);
+    overflow: hidden;
+ }
+ /* When hovered */
+ .form-3gdLxP:hover .channelAttachmentArea-HwpkuQ{
+	height: var(--shrink-message-form-attachements-height-hover);
+ }
+ /* When focused */
+.form-3gdLxP:focus .channelAttachmentArea-HwpkuQ,
+.form-3gdLxP:focus-within .channelAttachmentArea-HwpkuQ,
+.form-3gdLxP:focus-visible .channelAttachmentArea-HwpkuQ{
+	height: var(--shrink-message-form-attachements-height-focus);
 }
 
 
