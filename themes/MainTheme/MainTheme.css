@@ -401,7 +401,7 @@ body {
 
     --servers-width: 72px;
     --nitrogoal-height: 52px;
-    --buttons-witdh: 40px;
+    --buttons-width: 40px;
 	
 }
 
@@ -598,10 +598,11 @@ main.chatContent-3KubbW,
 .sidebar-1tnWFu *,
 .sidebar-1tnWFu,
 [aria-label="Servers sidebar"],
+.buttons-uaqb-5,
 .buttons-uaqb-5>*:not(.separator-3ng7S5) {
-    transition-property: all;
-    transition-duration: 350ms;
-    transition-timing-function: ease-in-out;
+    -webkit-transition: all 350ms ease-in-out;
+    -moz-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
 }
 
 /* Channel List */
