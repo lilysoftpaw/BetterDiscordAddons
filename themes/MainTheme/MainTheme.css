@@ -659,3 +659,19 @@ main.chatContent-3KubbW{
 	max-height: var(--shrink-message-form-height-focus);
 	width: var(--shrink-message-form-width-focus);
  }
+
+
+ /* Channel preview plugin support */
+ #ChannelsPreview {
+    /*background: var(--background-primary);*/
+    background: rgba(0, 0, 0, calc(var(--background-shading) * .7)) !important;
+ }
+  #ChannelsPreview::before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, calc(var(--background-shading) * .7)), transparent) !important;
+    /*background: linear-gradient(to bottom, var(--background-primary), transparent);*/
+  }
+  #ChannelsPreview-darken {
+    background: #000;
+    transition: .3s opacity;
+  }
+  
