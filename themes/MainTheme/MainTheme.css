@@ -179,7 +179,7 @@ body:not([inputtype="mouse"]):not([inputtype="touch"]):not([inputtype="pen"]) {
     --shrink-message-form-attachements-height: 0px;
     --shrink-message-form-hover-attachements-height: 10px;
     --shrink-message-form-hover-attachements-hover-height: 10px;
-    --shrink-message-form-focus-attachements-height: calc(var(--message-form-attachements-height) / 2);
+    --shrink-message-form-focus-attachements-height: calc(var(--message-form-attachements-height) / 3);
     --shrink-message-form-focus-attachements-hover-height: var(--message-form-attachements-height);
     --shrink-members-group-height: 0px;
     --shrink-members-group-opacity: 0;
@@ -208,7 +208,7 @@ body[inputtype="pen"] {
     --shrink-message-form-attachements-height: 0px;
     --shrink-message-form-hover-attachements-height: 10px;
     --shrink-message-form-hover-attachements-hover-height: 10px;
-    --shrink-message-form-focus-attachements-height: calc(var(--message-form-attachements-height) / 2);
+    --shrink-message-form-focus-attachements-height: calc(var(--message-form-attachements-height) / 3);
     --shrink-message-form-focus-attachements-hover-height: var(--message-form-attachements-height);
     --shrink-members-group-height: 0px;
     --shrink-members-group-opacity: 0;
@@ -234,7 +234,7 @@ body[inputtype="mouse"] {
     --shrink-message-form-attachements-height: 0px;
     --shrink-message-form-hover-attachements-height: 10px;
     --shrink-message-form-hover-attachements-hover-height: 10px;
-    --shrink-message-form-focus-attachements-height: calc(var(--message-form-attachements-height) / 2);
+    --shrink-message-form-focus-attachements-height: calc(var(--message-form-attachements-height) / 3);
     --shrink-message-form-focus-attachements-hover-height: var(--message-form-attachements-height);
     --shrink-members-group-height: 0px;
     --shrink-members-group-opacity: 0;
