@@ -177,8 +177,10 @@ body:not([inputtype="mouse"]):not([inputtype="touch"]):not([inputtype="pen"]) {
     --shrink-message-form-buttons-width: 0px;
     --shrink-message-form-attachements-padding: 0px;
     --shrink-message-form-attachements-height: 0px;
-    --shrink-message-form-attachements-height-hover: 10px;
-    --shrink-message-form-attachements-height-focus: var(--message-form-attachements-height);
+    --shrink-message-form-hover-attachements-height: 10px;
+    --shrink-message-form-hover-attachements-hover-height: 10px;
+    --shrink-message-form-focus-attachements-height: calc(var(--message-form-attachements-height) / 2);
+    --shrink-message-form-focus-attachements-hover-height: var(--message-form-attachements-height);
     --shrink-members-group-height: 0px;
     --shrink-members-group-opacity: 0;
     --shrink-members-group-overflow: hidden;
@@ -204,8 +206,10 @@ body[inputtype="pen"] {
     --shrink-message-form-buttons-width: 0px;
     --shrink-message-form-attachements-padding: 0px;
     --shrink-message-form-attachements-height: 0px;
-    --shrink-message-form-attachements-height-hover: 10px;
-    --shrink-message-form-attachements-height-focus: var(--message-form-attachements-height);
+    --shrink-message-form-hover-attachements-height: 10px;
+    --shrink-message-form-hover-attachements-hover-height: 10px;
+    --shrink-message-form-focus-attachements-height: calc(var(--message-form-attachements-height) / 2);
+    --shrink-message-form-focus-attachements-hover-height: var(--message-form-attachements-height);
     --shrink-members-group-height: 0px;
     --shrink-members-group-opacity: 0;
     --shrink-members-group-overflow: hidden;
@@ -228,8 +232,10 @@ body[inputtype="mouse"] {
     --shrink-message-form-buttons-width: 0px;
     --shrink-message-form-attachements-padding: 0px;
     --shrink-message-form-attachements-height: 0px;
-    --shrink-message-form-attachements-height-hover: 10px;
-    --shrink-message-form-attachements-height-focus: var(--message-form-attachements-height);
+    --shrink-message-form-hover-attachements-height: 10px;
+    --shrink-message-form-hover-attachements-hover-height: 10px;
+    --shrink-message-form-focus-attachements-height: calc(var(--message-form-attachements-height) / 2);
+    --shrink-message-form-focus-attachements-hover-height: var(--message-form-attachements-height);
     --shrink-members-group-height: 0px;
     --shrink-members-group-opacity: 0;
     --shrink-members-group-overflow: hidden;
@@ -264,8 +270,10 @@ body[inputtype="touch"] {
 
     --shrink-message-form-attachements-padding: 20px 10px 10px;
     --shrink-message-form-attachements-height: var(--message-form-attachements-height);
-    --shrink-message-form-attachements-height-hover: var(--message-form-attachements-height);
-    --shrink-message-form-attachements-height-focus: var(--message-form-attachements-height);
+    --shrink-message-form-hover-attachements-height: var(--message-form-attachements-height);
+    --shrink-message-form-hover-attachements-hover-height: var(--message-form-attachements-height);
+    --shrink-message-form-focus-attachements-height: var(--message-form-attachements-height);
+    --shrink-message-form-focus-attachements-hover-height: var(--message-form-attachements-height);
 
     --shrink-members-group-height: 40px;
     --shrink-members-group-opacity: 0.85;
@@ -702,22 +710,33 @@ main.chatContent-3KubbW{
 .buttons-uaqb-5>*:not(.separator-3ng7S5){
     width: var(--buttons-width);
 }
-/* Form attachements */
+/* attachements */
 .form-3gdLxP:not(:hover):not(:focus):not(:focus-within) .channelAttachmentArea-HwpkuQ{
     height: var(--shrink-message-form-attachements-height);
     padding: var(--shrink-message-form-attachements-padding);
     overflow: hidden;
  }
- /* When hovered */
+ /* When hovered above form */
  .form-3gdLxP:hover .channelAttachmentArea-HwpkuQ{
-	height: var(--shrink-message-form-attachements-height-hover);
+	height: var(--shrink-message-form-hover-attachements-height);
+ }
+ /* When hovered above form + attachements */
+ .form-3gdLxP:hover .channelAttachmentArea-HwpkuQ:hover{
+	height: var(--shrink-message-form-hover-attachements-hover-height);
  }
  /* When focused */
 .form-3gdLxP:focus .channelAttachmentArea-HwpkuQ,
 .form-3gdLxP:focus-within .channelAttachmentArea-HwpkuQ,
 .form-3gdLxP:focus-visible .channelAttachmentArea-HwpkuQ{
-	height: var(--shrink-message-form-attachements-height-focus);
+	height: var(--shrink-message-form-focus-attachements-height);
 }
+ /* When form focused + attachement hover */
+ .form-3gdLxP:focus .channelAttachmentArea-HwpkuQ:hover,
+ .form-3gdLxP:focus-within .channelAttachmentArea-HwpkuQ:hover,
+ .form-3gdLxP:focus-visible .channelAttachmentArea-HwpkuQ:hover{
+     height: var(--shrink-message-form-focus-attachements-hover-height);
+ }
+
 
 
  /* Channel preview plugin support */
