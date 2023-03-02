@@ -26,32 +26,34 @@ module.exports = class BoxesForMessages {
                 check: "BFM-Done",
             };
             this.style = () => {
-                var q = 0;
-                var messagesToStyle = document.querySelector(".scrollerInner-2PPAp2").querySelectorAll(`li>.cozyMessage-1DWF9U${this.ignoreStyled == false ? "" : ":not(." + this.classes.check + ")"}`);
-                for (var i = 0; i < messagesToStyle.length; i++) {
-                    var isGroupStart = messagesToStyle[i].parentElement.querySelectorAll(".groupStart-3Mlgv1").length != 0;
-                    if (!isGroupStart && i == messagesToStyle.length - 1) {
-                        try {
-                            messagesToStyle[i - 1].classList.remove(this.classes.end);
-                        } catch (e) {}
-                        messagesToStyle[i].classList.add(this.classes.end);
-                    } else if (isGroupStart && i == messagesToStyle.length - 1) {
-                        messagesToStyle[i].classList.add(this.classes.end);
-                    }
-                    if (isGroupStart) {
-                        try {
-                            messagesToStyle[i - 1].classList.add(this.classes.end);
-                        } catch (err) {}
-                        messagesToStyle[i].classList.add(this.classes.start);
-                    }
-                    messagesToStyle[i].classList.add(this.classes.message);
-                    messagesToStyle[i].classList.add(this.classes.check);
+                try {
+                    var q = 0;
+                    var messagesToStyle = document.querySelector(".scrollerInner-2PPAp2").querySelectorAll(`li>.cozyMessage-1DWF9U${this.ignoreStyled == false ? "" : ":not(." + this.classes.check + ")"}`);
+                    for (var i = 0; i < messagesToStyle.length; i++) {
+                        var isGroupStart = messagesToStyle[i].parentElement.querySelectorAll(".groupStart-3Mlgv1").length != 0;
+                        if (!isGroupStart && i == messagesToStyle.length - 1) {
+                            try {
+                                messagesToStyle[i - 1].classList.remove(this.classes.end);
+                            } catch (e) {}
+                            messagesToStyle[i].classList.add(this.classes.end);
+                        } else if (isGroupStart && i == messagesToStyle.length - 1) {
+                            messagesToStyle[i].classList.add(this.classes.end);
+                        }
+                        if (isGroupStart) {
+                            try {
+                                messagesToStyle[i - 1].classList.add(this.classes.end);
+                            } catch (err) {}
+                            messagesToStyle[i].classList.add(this.classes.start);
+                        }
+                        messagesToStyle[i].classList.add(this.classes.message);
+                        messagesToStyle[i].classList.add(this.classes.check);
 
-                    q++;
-                }
-                messagesToStyle = "";
-                console.log(q);
-                q = 0;
+                        q++;
+                    }
+                    messagesToStyle = "";
+                    console.log(q);
+                    q = 0;
+                } catch (err) {}
             };
             this.loop = () => {
                 if (this.loopSettings.loop) {
@@ -63,9 +65,9 @@ module.exports = class BoxesForMessages {
         };
     }
     async start() {
-        document.BFM = new document.BoxesForMessages();
+        new document.BoxesForMessages();
     }
     stop() {
-        document.BFM = "";
+        document.BoxesForMessages = "";
     }
 };

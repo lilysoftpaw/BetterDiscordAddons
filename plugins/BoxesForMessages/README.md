@@ -33,6 +33,7 @@ Add this to your custom css / theme.
   --BFM-border-style: solid;
   --BFM-border-radius: 15px;
   --BFM-margin: 40px;
+  --BFM-background: transparent;
 }
 /* Add the following in its entierty. This is made to go in deep into the theme file */
 :root {
@@ -53,5 +54,7 @@ Add this to your custom css / theme.
     border-right: var(--BFM-border);
     margin-left: var(--BFM-margin);
     margin-right: var(--BFM-margin);
+    background: var(--BFM-background);
+    overflow: hidden;
 }
 ```
