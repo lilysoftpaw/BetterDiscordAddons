@@ -438,6 +438,14 @@ body {
     --buttons-width: 40px;
     --message-form-attachements-height: 216px;
     --shrink-transition: all 350ms ease-in-out;
+    
+    /*Boxes For Messages PLUGIN STYLE SETTINGS*/
+    --BFM-border-size: 5px;
+    --BFM-border-color: var(--main-color);
+    --BFM-border-style: solid;
+    --BFM-border-radius: 15px;
+    --BFM-margin: 40px;
+    --BFM-background: var(--background-overlay);
 	
 }
 
@@ -762,3 +770,26 @@ main.chatContent-3KubbW{
     transition: .3s opacity;
   }
   
+
+  /* Support for one of my other plugins, Boxes for messages! */
+  body {
+    --BFM-border: var(--BFM-border-size) var(--BFM-border-style) var(--BFM-border-color);
+  }
+  .BFM-End{
+      border-bottom: var(--BFM-border);
+      border-bottom-left-radius: var(--BFM-border-radius);
+      border-bottom-right-radius: var(--BFM-border-radius);
+  }
+  .BFM-Start{
+      border-top: var(--BFM-border);
+      border-top-left-radius: var(--BFM-border-radius);
+      border-top-right-radius: var(--BFM-border-radius);
+  }
+  .BFM-Msg{
+      border-left: var(--BFM-border);
+      border-right: var(--BFM-border);
+      margin-left: var(--BFM-margin);
+      margin-right: var(--BFM-margin);
+      background: var(--BFM-background);
+      overflow: hidden;
+  }
