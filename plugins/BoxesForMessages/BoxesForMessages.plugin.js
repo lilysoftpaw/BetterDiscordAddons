@@ -1,6 +1,6 @@
 /**
  * @name Boxes for Messages
- * @version 1.1.0
+ * @version 1.1.1
  * @description Adjusts the Discord DOM to add boxes around every messages, per user!
  * @author Ahirusameneko-chan
  * @authorId 598208193772126259
