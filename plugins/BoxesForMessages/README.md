@@ -56,7 +56,7 @@ Add this to your custom css / theme.
     margin-right: var(--BFM-margin);
     background: var(--BFM-background);         
 }
-.BFM-Start, .BFM-End {
+.BFM-Start {
     overflow: hidden;
 }
 .BFM-Start .buttons-3dF5Kd {
