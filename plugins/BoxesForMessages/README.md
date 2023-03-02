@@ -57,4 +57,7 @@ Add this to your custom css / theme.
     background: var(--BFM-background);
     overflow: hidden;
 }
+.BFM-Msg .buttons-3dF5Kd {
+    top: 5px;
+}
 ```
