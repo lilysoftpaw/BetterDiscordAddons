@@ -89,7 +89,7 @@ body.ptb {
     --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
     --offline-color: #808080;
 
-    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Windoge.png) rgba(0, 0, 0, 0.5) !important;
+    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Windoge.png) rgba(0, 0, 0, 0.5);
     /* End of Clearvision settings */
     --image-attachement-opacity: 1;
 }
@@ -127,7 +127,7 @@ body.development {
     --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
     --offline-color: #808080;
 
-    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/vlcsnap-2023-01-20-20h27m06s763.png) rgba(0, 0, 0, 0.5) !important;
+    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/vlcsnap-2023-01-20-20h27m06s763.png) rgba(0, 0, 0, 0.5);
     /* End of Clearvision settings */
     --image-attachement-opacity: 1;
 }
