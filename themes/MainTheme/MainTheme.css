@@ -796,7 +796,7 @@ body {
 }
 
 /* ### VENCORD SUPPORT */
-.vc-platform-indicator > svg {
+.vc-platform-indicator > svg[fill="var(--green-360"] {
     fill: var(--main-color);
 }
 
