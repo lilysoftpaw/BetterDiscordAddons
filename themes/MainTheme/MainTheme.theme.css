@@ -39,6 +39,15 @@ OG Theme Invite https://discord.gg/dHaSxn3
 /* IMPORT Clearvision is done in the MainTheme.css CSS */
 /*@import url(https://clearvision.gitlab.io/v6/main.css);*/
 
+/*
+ EmojiReplace V1.0.0
+ Credits to DevilBro
+ OG description Replaces Discord's Emojis with Emojis of a different Provider (Apple, Facebook...)
+ OG Theme Invite https://discord.gg/Jx3TjNS
+ OG Theme Website https://mwittrien.github.io/
+ OG Source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/EmojiReplace/
+ */
+ /* IMPORT Emoji replace is done in the MainTheme.css CSS */
 /*@media screen and (orientation: portrait) {
     body.stable {
         --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
