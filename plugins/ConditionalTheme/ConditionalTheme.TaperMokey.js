@@ -21,17 +21,17 @@
         isclientattrib.value = false;
         var releaseChannelattrib = document.createAttribute("releasechannel");
         try{
-            var releaseChannel = DiscordNative.app.getReleaseChannel()
+            var releaseChannel = DiscordNative.app.getReleaseChannel();
             // Edit to attribue instead of class, upcoming feature for my theme
-            
+
                 releaseChannelattrib.value = releaseChannel;
-	            
+
             // Compat for my unupdated theme
                 document.body.classList.add(releaseChannel);
                 isclientattrib.value = true; // because its using the Release channel function, its native discord client :3
-                console.log("Added using Release Channel Function")
+                console.log("Added using Release Channel Function");
         }catch(err){
-            console.log("Couldn't use release channel, using URL & Assuming WebBrowser")
+            console.log("Couldn't use release channel, using URL & Assuming WebBrowser");
             console.log(err)
             if (document.domain == "discord.com") {
                 releaseChannelattrib.value = "stable";
@@ -46,15 +46,15 @@
         }
         document.body.attributes.setNamedItem(releaseChannelattrib);
         document.body.attributes.setNamedItem(isclientattrib);
-        
+
         document.body.classList.add("anyclient");
         //Add event listener for touch / mouse / pen input
         document.devFreeze = false;
         document.body.addEventListener('pointerdown', (event) => {
             if(!document.devFreeze){
-    	        var myshit = document.createAttribute("inputType");
-	            myshit.value = event.pointerType;
-	            document.body.attributes.setNamedItem(myshit);
+    	        var inputType = document.createAttribute("inputType");
+	            inputType.value = event.pointerType;
+	            document.body.attributes.setNamedItem(inputType);
             }
         })
 })();
