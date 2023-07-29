@@ -402,7 +402,15 @@ body:not(.anyclient) {
     --rs-offline-color: var(--offline-color); /* Colour for offline status */
     --rs-streaming-color: var(--streaming-color); /* Colour for streaming status */
     --rs-invisible-color: var(--offline-color); /* Colour for invisible status - Note: this will only show for your own invisibility */
-    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+    
+	/*
+		The setting below has some issues, and such is now 
+		unused even tho it is used in the radial status 
+		theme. It's overriden and turned off by my 
+		own theme to fix a bug.
+	*/
+	--rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+
 
     --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
     /* End of Radial Status settings */
