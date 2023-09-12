@@ -172,6 +172,42 @@ body:not(.anyclient) {
 }
 /* Input type NOT found */
 body:not([inputtype="mouse"]):not([inputtype="touch"]):not([inputtype="pen"]) {
+    /*CUSTOM EDITS SETTINGS*/
+    --shrink-members-width: var(--members-width);
+    --shrink-servers-width: var(--servers-width);
+    --shrink-channels-width: var(--channels-width);
+
+    --shrink-channels-margin-left: 8px;
+    --shrink-channels-nitrogoal-height: var(--nitrogoal-height);
+    --shrink-channels-nitrogoal-overflow: visible;
+
+    --shrink-settings-opacity: 1;
+    --shrink-settings-pointer-events: all;
+
+    --shrink-message-wrapper-width: 100%;
+    --shrink-message-form-height: 50%;
+    --shrink-message-form-width: calc(var(--shrink-message-wrapper-width) - 3%);
+    --shrink-message-form-width-hover: var(--shrink-message-form-width);
+    --shrink-message-form-width-focus: var(--shrink-message-form-width);
+
+    --shrink-message-form-height-hover: var(--shrink-message-form-height);
+    --shrink-message-form-height-focus: var(--shrink-message-form-height);
+
+    --shrink-message-form-buttons-width: var(--buttons-witdh);
+
+    --shrink-message-form-attachements-padding: 20px 10px 10px;
+    --shrink-message-form-attachements-height: var(--message-form-attachements-height);
+    --shrink-message-form-hover-attachements-height: var(--message-form-attachements-height);
+    --shrink-message-form-hover-attachements-hover-height: var(--message-form-attachements-height);
+    --shrink-message-form-focus-attachements-height: var(--message-form-attachements-height);
+    --shrink-message-form-focus-attachements-hover-height: var(--message-form-attachements-height);
+
+    --shrink-members-group-height: 40px;
+    --shrink-members-group-opacity: 0.85;
+    --shrink-members-group-overflow: hidden;
+    --shrink-members-group-padding: 20px 8px 0px 16px;
+}
+/*{
     --shrink-settings-opacity: 0;
     --shrink-settings-pointer-events: none;
     --shrink-channels-margin-left: 0px;
@@ -195,7 +231,7 @@ body:not([inputtype="mouse"]):not([inputtype="touch"]):not([inputtype="pen"]) {
     --shrink-members-group-padding: 0px;
     --shrink-channels-nitrogoal-height: 0px;
     --shrink-channels-nitrogoal-overflow: hidden;
-}
+}*/
 /* Found pen input type */
 body[inputtype="pen"] {
     --shrink-members-width: 65px;
