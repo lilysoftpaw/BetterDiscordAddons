@@ -35,6 +35,9 @@
 body{
     --main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
 }
+*{
+	font-family: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 
 body {
 	 /* Radial Status settings */
