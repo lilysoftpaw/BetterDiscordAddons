@@ -1,0 +1,106 @@
+/**
+ * @name Main Theme (DO NOT USE IN BETTER DISCORD)
+ * @version 1.1.1
+ * @description This file is normally imported in the actual theme. it only contains the meta in case you randomly decide to use it in betterdiscord even tho you are told not to.
+ * @author Duck-Chan
+ * @authorId 598208193772126259
+ * @source https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme
+ * @website https://bido67.github.io/aboutme
+ * @invite bnSrkHT
+ */
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+
+/*@import url("https://clearvision.github.io/ClearVision-v6/main.css");*/
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css");
+
+/* DO NOT USE THIS IN BETTER DISCORD. THIS IS FOR DEFAULT SETTINGS */
+
+/*
+ Radial Status V2.0.0
+ Credits to: Gibbu#1211
+ OG Theme Invite https://discord.gg/ZHthyCw
+ OG Theme Description: Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file.
+ OG Theme Source https://github.com/DiscordStyles/RadialStatus
+ OG Theme Website https://www.gibbu.me
+*/
+
+/*
+ EmojiReplace V1.0.0
+ Credits to DevilBro
+ OG description Replaces Discord's Emojis with Emojis of a different Provider (Apple, Facebook...)
+ OG Theme Invite https://discord.gg/Jx3TjNS
+ OG Theme Website https://mwittrien.github.io/
+ OG Source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/EmojiReplace/
+ */
+body{
+    --main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+}
+
+body {
+	 /* Radial Status settings */
+	 --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+	 --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+	 --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+ 
+	 --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+	 --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+	 --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+ 
+	 --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+ 
+	 --rs-online-color: rgba(67, 181, 129, 1); /* Colour for online status */
+	 --rs-idle-color: rgba(250, 166, 26, 1); /* Colour for idle status */
+	 --rs-dnd-color: rgba(240, 71, 71, 1); /* Colour for dnd status */
+	 --rs-offline-color: #747f8d; /* Colour for offline status */
+	 --rs-streaming-color: #593695; /* Colour for streaming status */
+	 --rs-invisible-color: rgba(116, 127, 141, 1); /* Colour for invisible status - Note: this will only show for your own invisibility */
+	 --rs-phone-color: rgba(67, 181, 129, 1); /* Colour of the ring and phone icon when a user is on their phone |  */
+}
+
+/* RADIAL STATUS FIX */
+
+#app-mount .wrapper-3Un6-K rect[fill="c"],
+#app-mount .wrapper-3Un6-K rect[fill="#3ba55c"],
+#app-mount .wrapper-3Un6-K rect[fill="rgba(67, 181, 129, 1)"],
+#app-mount .wrapper-3Un6-K rect[mask*="online"],
+#app-mount .wrapper-3Un6-K rect[fill*="hsl(139"],
+#app-mount .wrapper-3Un6-K rect[fill*="var(--status-green"],
+#app-mount .wrapper-3Un6-K rect[fill="#23a55a"] {
+    stroke: var(--rs-online-color) !important;
+}
+#app-mount .wrapper-3Un6-K rect[fill="#faa61a"],
+#app-mount .wrapper-3Un6-K rect[fill="rgba(250, 166, 26, 1)"],
+#app-mount .wrapper-3Un6-K rect[mask*="idle"],
+#app-mount .wrapper-3Un6-K rect[fill*="hsl(38"],
+#app-mount .wrapper-3Un6-K rect[fill*="var(--status-yellow"],
+#app-mount .wrapper-3Un6-K rect[fill="#f0b232"] {
+    stroke: var(--rs-idle-color) !important;
+}
+#app-mount .wrapper-3Un6-K rect[fill="#f04747"],
+#app-mount .wrapper-3Un6-K rect[fill="rgba(240, 71, 71, 1)"],
+#app-mount .wrapper-3Un6-K rect[fill="#ed4245"],
+#app-mount .wrapper-3Un6-K rect[mask*="dnd"],
+#app-mount .wrapper-3Un6-K rect[fill*="hsl(359"],
+#app-mount .wrapper-3Un6-K rect[fill*="var(--status-red"],
+#app-mount .wrapper-3Un6-K rect[fill="#f23f43"] {
+    stroke: var(--rs-dnd-color) !important;
+}
+#app-mount .wrapper-3Un6-K rect[fill="#593695"],
+#app-mount .wrapper-3Un6-K rect[mask*="streaming"],
+#app-mount .wrapper-3Un6-K rect[fill*="var(--status-purple"] {
+    stroke: var(--rs-streaming-color) !important;
+}
+#app-mount .wrapper-3Un6-K rect[fill="#747f8d"],
+#app-mount .wrapper-3Un6-K rect[mask*="offline"],
+#app-mount .wrapper-3Un6-K rect[fill="NaN"] {
+    stroke: var(--rs-offline-color) !important;
+}
+#app-mount .wrapper-3Un6-K rect[fill="#747f8d"],
+#app-mount .wrapper-3Un6-K rect[mask*="invisible"],
+#app-mount .wrapper-3Un6-K rect[fill="rgba(116, 127, 141, 1)"],
+#app-mount .wrapper-3Un6-K rect[fill*="hsl(214"],
+#app-mount .wrapper-3Un6-K rect[fill="var(--status-grey-500)"],
+#app-mount .wrapper-3Un6-K rect[fill="#82858f"] {
+    stroke: var(--rs-invisible-color) !important;
+}
+
