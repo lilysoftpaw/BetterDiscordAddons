@@ -2,15 +2,14 @@
  * @name Main Theme (DO NOT USE IN BETTER DISCORD)
  * @version 1.1.1
  * @description This file is normally imported in the actual theme. it only contains the meta in case you randomly decide to use it in betterdiscord even tho you are told not to.
- * @author Duck-Chan
+ * @author Lilysoftpaw
  * @authorId 598208193772126259
- * @source https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme
- * @website https://bido67.github.io/aboutme
+ * @source https://github.com/lilysoftpaw/BetterDiscordAddons/themes/MainTheme
+ * @website https://aboutme.lilysoftpaw.com/
  * @invite bnSrkHT
  */
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 
-/*@import url("https://clearvision.github.io/ClearVision-v6/main.css");*/
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css");
 
 /* DO NOT USE THIS IN BETTER DISCORD. THIS IS FOR DEFAULT SETTINGS */
@@ -33,10 +32,10 @@
  OG Source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/EmojiReplace/
  */
 body{
-    --main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+    --main-font: Dreaming Outloud Pro, Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
 }
 *{
-	font-family: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: Dreaming Outloud Pro, Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -50,7 +49,7 @@ body {
 	 --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
  
 	 --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
- 
+         --rs-phone-visible: none;
 	 --rs-online-color: rgba(67, 181, 129, 1); /* Colour for online status */
 	 --rs-idle-color: rgba(250, 166, 26, 1); /* Colour for idle status */
 	 --rs-dnd-color: rgba(240, 71, 71, 1); /* Colour for dnd status */

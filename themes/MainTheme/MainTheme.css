@@ -2,10 +2,10 @@
  * @name Main Theme (DO NOT USE IN BETTER DISCORD)
  * @version 1.1.1
  * @description This file is normally imported in the actual theme. it only contains the meta in case you randomly decide to use it in betterdiscord even tho you are told not to.
- * @author Duck-Chan
+ * @author Lilysoftpaw
  * @authorId 598208193772126259
- * @source https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme
- * @website https://bido67.github.io/aboutme
+ * @source https://github.com/lilysoftpaw/BetterDiscordAddons/themes/MainTheme
+ * @website https://aboutme.lilysoftpaw.com/
  * @invite bnSrkHT
  */
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
@@ -84,7 +84,7 @@ body.ptb {
     --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
     --offline-color: #808080;
 
-    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Windoge.png) rgba(0, 0, 0, 0.5);
+    --background-image: url(https://lilysoftpaw.github.io/discord-backgrounds-bido/Windoge.png) rgba(0, 0, 0, 0.5);
     /* End of Clearvision settings */
     --image-attachement-opacity: 1;
 }
@@ -104,7 +104,7 @@ body.canary {
     --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
     --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 
-    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Background_4x_16_9.jpg) rgba(0, 0, 0, 0.5); /**/
+    --background-image: url(https://lilysoftpaw.github.io/discord-backgrounds-bido/Background_4x_16_9.jpg) rgba(0, 0, 0, 0.5); /**/
     /* End of Clearvision settings */
     --image-attachement-opacity: 1;
 }
@@ -122,14 +122,14 @@ body.development {
     --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
     --offline-color: #808080;
 
-    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/vlcsnap-2023-01-20-20h27m06s763.png) rgba(0, 0, 0, 0.5);
+    --background-image: url(https://lilysoftpaw.github.io/discord-backgrounds-bido/vlcsnap-2023-01-20-20h27m06s763.png) rgba(0, 0, 0, 0.5);
     /* End of Clearvision settings */
     --image-attachement-opacity: 1;
 }
 /*Example of how to make the background image of a client adapt to a vertical layout*/ /*
 @media screen and (orientation: portrait) {
 	body.canary {
-		--background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
+		--background-image: url(https://lilysoftpaw.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
 	}
 }
 */
@@ -162,7 +162,7 @@ body:not(.anyclient) {
     --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
     --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
     --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
-    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/duckbg.png) rgba(0, 0, 0, 0.5); /**/
+    --background-image: url(https://lilysoftpaw.github.io/discord-backgrounds-bido/duckbg.png) rgba(0, 0, 0, 0.5); /**/
     /* End of Clearvision settings */
 
     /* My theme */

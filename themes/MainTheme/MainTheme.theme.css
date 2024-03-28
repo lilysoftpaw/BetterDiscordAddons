@@ -1,19 +1,19 @@
 /**
  * @name Main Theme
  * @version 1.1.1
- * @description Ahirusameneko Chan's discord Theme
- * @author Duck-Chan
+ * @description lilysoftpaw's discord Theme (Unsued, moved to nitro themeing)
+ * @author Lilysoftpaw
  * @authorId 598208193772126259
- * @source https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme
- * @updateUrl https://raw.githubusercontent.com/Bido67/BetterDiscordAddons/main/themes/MainTheme/MainTheme.theme.css
- * @website https://bido67.github.io/aboutme
+ * @source https://github.com/lilysoftpaw/BetterDiscordAddons/themes/MainTheme
+ * @updateUrl https://raw.githubusercontent.com/lilysoftpaw/BetterDiscordAddons/main/themes/MainTheme/MainTheme.theme.css
+ * @website https://aboutme.lilysoftpaw.com/
  * @invite bnSrkHT
  */
 
 /*Importing themes*/
 
 /*Duck-Chan's own file owo*/
-@import url("https://bido67.github.io/BetterDiscordAddons/themes/MainTheme/MainTheme.css");
+@import url("https://lilysoftpaw.github.io/BetterDiscordAddons/themes/MainTheme/MainTheme.css");
 
 /*
 Radial Status V2.0.0
@@ -50,7 +50,7 @@ OG Theme Invite https://discord.gg/dHaSxn3
  /* IMPORT Emoji replace is done in the MainTheme.css CSS */
 /*@media screen and (orientation: portrait) {
     body.stable {
-        --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
+        --background-image: url(https://lilysoftpaw.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
     }
 }*/
 
@@ -98,7 +98,7 @@ body.ptb {
     --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
     --offline-color: #808080;
 
-    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Windoge.png) rgba(0, 0, 0, 0.5);
+    --background-image: url(https://lilysoftpaw.github.io/discord-backgrounds-bido/Windoge.png) rgba(0, 0, 0, 0.5);
     /* End of Clearvision settings */
     --image-attachement-opacity: 1;
 }
@@ -118,7 +118,7 @@ body.canary {
     --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
     --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 
-    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Background_4x_16_9.jpg) rgba(0, 0, 0, 0.5); /**/
+    --background-image: url(https://lilysoftpaw.github.io/discord-backgrounds-bido/Background_4x_16_9.jpg) rgba(0, 0, 0, 0.5); /**/
     /* End of Clearvision settings */
     --image-attachement-opacity: 1;
 }
@@ -136,7 +136,7 @@ body.development {
     --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
     --offline-color: #808080;
 
-    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/vlcsnap-2023-01-20-20h27m06s763.png) rgba(0, 0, 0, 0.5);
+    --background-image: url(https://lilysoftpaw.github.io/discord-backgrounds-bido/vlcsnap-2023-01-20-20h27m06s763.png) rgba(0, 0, 0, 0.5);
     /* End of Clearvision settings */
     --image-attachement-opacity: 1;
 }
@@ -145,7 +145,7 @@ body.development {
 /*
 @media screen and (orientation: portrait) {
     body.canary {
-        --background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
+        --background-image: url(https://lilysoftpaw.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
     }
 }
 */
@@ -319,14 +319,14 @@ body:not(.anyclient) {
     --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
     --streaming-color: var(--main-color); /* streaming status color (hex, rgb or hsl) [default: #593695] */
     --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
-    --background-image: url(https://bido67.github.io/discord-backgrounds-bido/duckbg.png) rgba(0, 0, 0, 0.5); /**/
+    --background-image: url(https://lilysoftpaw.github.io/discord-backgrounds-bido/duckbg.png) rgba(0, 0, 0, 0.5); /**/
     /* End of Clearvision settings */
 
     /* My theme */
     --image-attachement-opacity: 1;
     /* CLEARVISION SETTINGS */ /*Note: I kinda messed up the config order. Feel free to copy the orignial config and paste it here :3 */
     /* GENERAL */
-    --main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+    --main-font: Dreaming Outloud Pro, Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
     --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
     --server-columns: 2; /* amount of server list columns [default: 1] */
     --channels-width: 240px; /* channel list width (240px for Discord default) [default: 220px] */

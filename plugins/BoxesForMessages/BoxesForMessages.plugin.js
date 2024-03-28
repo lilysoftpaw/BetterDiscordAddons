@@ -6,7 +6,7 @@
  * @authorId 598208193772126259
  * @source https://github.com/Bido67/BetterDiscordAddons/plugins/BoxesForMessages
  * @updateUrl https://raw.githubusercontent.com/Bido67/BetterDiscordAddons/main/plugins/BoxesForMessages/BoxesForMessages.plugin.js
- * @website https://bido67.github.io/aboutme
+ * @website https://lilysoftpaw.github.io/aboutme
  * @invite bnSrkHT
  */
 
