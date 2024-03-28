@@ -1,12 +1,12 @@
 /**
  * @name Main Theme
  * @version 1.1.1
- * @description Ahirusameneko Chan's discord Theme
- * @author Duck-Chan
+ * @description lilysoftpaw's discord Theme (Unsued, moved to nitro themeing)
+ * @author Lilysoftpaw
  * @authorId 598208193772126259
- * @source https://github.com/Bido67/BetterDiscordAddons/themes/MainTheme
- * @updateUrl https://raw.githubusercontent.com/Bido67/BetterDiscordAddons/main/themes/MainTheme/MainTheme.theme.css
- * @website https://lilysoftpaw.github.io/aboutme
+ * @source https://github.com/lilysoftpaw/BetterDiscordAddons/themes/MainTheme
+ * @updateUrl https://raw.githubusercontent.com/lilysoftpaw/BetterDiscordAddons/main/themes/MainTheme/MainTheme.theme.css
+ * @website https://aboutme.lilysoftpaw.com/
  * @invite bnSrkHT
  */
 
@@ -326,7 +326,7 @@ body:not(.anyclient) {
     --image-attachement-opacity: 1;
     /* CLEARVISION SETTINGS */ /*Note: I kinda messed up the config order. Feel free to copy the orignial config and paste it here :3 */
     /* GENERAL */
-    --main-font: Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+    --main-font: Dreaming Outloud Pro, Whitney, Comic Sans Ms, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif; /*Minecrafter Alt, Mojangles;/*Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
     --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
     --server-columns: 2; /* amount of server list columns [default: 1] */
     --channels-width: 240px; /* channel list width (240px for Discord default) [default: 220px] */
